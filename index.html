@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIタスクボード</title>
+<style>
+  :root{--bg:#f4f5f7;--card:#fff;--ink:#172b4d;--sub:#6b778c;--line:#dfe1e6;
+    --todo:#0052cc;--doing:#ff991f;--review:#6554c0;--done:#36b37e;--blocked:#de350b;}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink)}
+  header{display:flex;align-items:center;gap:12px;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+  header h1{font-size:17px}
+  header .meta{font-size:12px;color:var(--sub);margin-right:auto}
+  .tabs button{border:none;background:none;padding:8px 14px;font-size:14px;cursor:pointer;border-bottom:2px solid transparent}
+  .tabs button.active{border-color:var(--todo);color:var(--todo);font-weight:600}
+  .btn{border:1px solid var(--line);background:#fff;border-radius:6px;padding:7px 14px;font-size:13px;cursor:pointer}
+  .btn.primary{background:var(--todo);color:#fff;border-color:var(--todo)}
+  #board{display:flex;gap:12px;padding:16px 20px;overflow-x:auto;align-items:flex-start;min-height:calc(100vh - 60px)}
+  .col{background:#ebecf0;border-radius:10px;min-width:250px;width:250px;padding:10px;flex-shrink:0}
+  .col h2{font-size:13px;color:var(--sub);padding:2px 6px 10px;display:flex;justify-content:space-between}
+  .col.dragover{outline:2px dashed var(--todo)}
+  .card{background:var(--card);border-radius:8px;padding:10px 12px;margin-bottom:8px;box-shadow:0 1px 2px rgba(9,30,66,.15);cursor:grab;font-size:13px}
+  .card .title{font-weight:600;margin-bottom:6px;word-break:break-all}
+  .card .badges{display:flex;gap:6px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:10px;background:#ebecf0;color:var(--sub)}
+  .tag.P0{background:#ffebe6;color:var(--blocked)} .tag.P1{background:#fff0b3;color:#974f0c}
+  .tag.cloud{background:#deebff;color:var(--todo)} .tag.local{background:#e3fcef;color:#006644} .tag.human{background:#eae6ff;color:var(--review)}
+  .card .reason{font-size:11px;color:var(--blocked);margin-top:6px}
+  .card.pending{opacity:.55;border:1px dashed var(--sub);cursor:default}
+  .bar{height:4px;border-radius:4px 4px 0 0;margin:-10px -12px 8px}
+  dialog{border:none;border-radius:10px;padding:22px;width:420px;max-width:92vw;box-shadow:0 8px 30px rgba(9,30,66,.3)}
+  dialog h3{margin-bottom:14px;font-size:15px}
+  dialog label{display:block;font-size:12px;color:var(--sub);margin:10px 0 4px}
+  dialog input,dialog select,dialog textarea{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;font-size:13px;font-family:inherit}
+  dialog .row{display:flex;gap:10px} dialog .row>div{flex:1}
+  dialog footer{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+  #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;opacity:0;transition:.3s;pointer-events:none}
+  #toast.show{opacity:1}
+  .hint{font-size:11px;color:var(--sub);margin-top:6px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🤖 AIタスクボード</h1>
+  <div class="tabs">
+    <button id="tabTasks" class="active" onclick="switchTab('tasks')">タスク</button>
+    <button id="tabArticles" onclick="switchTab('articles')">記事</button>
+  </div>
+  <span class="meta" id="meta"></span>
+  <button class="btn" onclick="openSettings()">⚙ 設定</button>
+  <button class="btn primary" onclick="openAdd()">＋ タスク追加</button>
+</header>
+<div id="board"></div>
+
+<dialog id="dlgAdd">
+  <h3>タスクを追加</h3>
+  <label>タイトル</label><input id="fTitle" placeholder="例: ◯◯の調査">
+  <div class="row">
+    <div><label>担当</label><select id="fAssignee"><option value="cloud">cloud (Claude)</option><option value="local">local (Hermes)</option><option value="human">human (自分)</option></select></div>
+    <div><label>優先度</label><select id="fPriority"><option>P2</option><option>P0</option><option>P1</option><option>P3</option></select></div>
+  </div>
+  <label>依頼内容(完了条件も書くと精度が上がる)</label><textarea id="fDesc" rows="4"></textarea>
+  <footer><button class="btn" onclick="dlgAdd.close()">キャンセル</button><button class="btn primary" onclick="submitAdd()">追加</button></footer>
+</dialog>
+
+<dialog id="dlgSettings">
+  <h3>設定</h3>
+  <label>GitHub Personal Access Token (fine-grained / このリポジトリのContents: Read and write のみ)</label>
+  <input id="fToken" type="password" placeholder="github_pat_...">
+  <div class="row">
+    <div><label>owner</label><input id="fOwner"></div>
+    <div><label>repo</label><input id="fRepo"></div>
+  </div>
+  <p class="hint">トークンはこのブラウザのlocalStorageにのみ保存されます。追加・移動の操作は inbox/ に変更リクエストとして書き込まれ、Mac側の同期バッチ(30分毎)がVaultに反映します。</p>
+  <footer><button class="btn" onclick="dlgSettings.close()">閉じる</button><button class="btn primary" onclick="saveSettings()">保存</button></footer>
+</dialog>
+<div id="toast"></div>
+
+<script>
+const TASK_COLS = [["todo","未着手","--todo"],["doing","作業中","--doing"],["review","レビュー待ち","--review"],["blocked","停滞","--blocked"],["done","完了","--done"]];
+const STAGE_COLS = ["素案","下書き","裏取り","校正","レビュー","完了"];
+let DATA = null, TAB = 'tasks', PENDING = [];
+
+function guessRepo(){
+  const o = localStorage.getItem('gh_owner') || location.hostname.split('.')[0];
+  const seg = location.pathname.split('/').filter(Boolean);
+  const r = localStorage.getItem('gh_repo') || seg[0] || '';
+  return {owner:o, repo:r};
+}
+const $ = id => document.getElementById(id);
+function toast(m){ $('toast').textContent=m; $('toast').classList.add('show'); setTimeout(()=>$('toast').classList.remove('show'),2600); }
+
+async function load(){
+  try{
+    const res = await fetch('board.json?ts='+Date.now());
+    DATA = await res.json();
+    $('meta').textContent = '更新: ' + (DATA.generated_at||'').replace('T',' ').slice(0,16) + (PENDING.length?` / 反映待ち ${PENDING.length}件`:'');
+    render();
+  }catch(e){ toast('board.json を読み込めません: '+e.message); }
+}
+
+function card(t, isTask){
+  const div = document.createElement('div');
+  div.className = 'card' + (t._pending?' pending':'');
+  const colVar = isTask ? (TASK_COLS.find(c=>c[0]===t.status)||[])[2] : null;
+  div.innerHTML = (colVar?`<div class="bar" style="background:var(${colVar})"></div>`:'') +
+    `<div class="title">${esc(t.title)}</div>
+     <div class="badges">
+       ${t.assignee?`<span class="tag ${esc(t.assignee)}">${esc(t.assignee)}</span>`:''}
+       ${t.priority?`<span class="tag ${esc(t.priority)}">${esc(t.priority)}</span>`:''}
+       ${isTask&&t.id?`<span class="tag">${esc(t.id)}</span>`:''}
+       ${t.updated?`<span class="tag">${esc(t.updated)}</span>`:''}
+     </div>` +
+    (t.blocked_reason?`<div class="reason">⛔ ${esc(t.blocked_reason)}</div>`:'') +
+    (t._pending?`<div class="reason" style="color:var(--sub)">⏳ 同期待ち</div>`:'');
+  if(isTask && !t._pending){
+    div.draggable = true;
+    div.addEventListener('dragstart', e=>e.dataTransfer.setData('text/plain', t.id));
+  }
+  return div;
+}
+function esc(s){ return String(s??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function render(){
+  const board = $('board'); board.innerHTML='';
+  if(TAB==='tasks'){
+    for(const [key,label] of TASK_COLS.map(c=>[c[0],c[1]])){
+      const col = document.createElement('div'); col.className='col'; col.dataset.status=key;
+      const items = (DATA.tasks||[]).filter(t=>t.status===key)
+        .concat(PENDING.filter(p=>p.to===key||(p.type==='create'&&key==='todo')).map(p=>({title:p.title||('移動: '+p.id),assignee:p.assignee,priority:p.priority,_pending:true})));
+      col.innerHTML = `<h2>${label}<span>${items.length}</span></h2>`;
+      items.forEach(t=>col.appendChild(card(t,true)));
+      col.addEventListener('dragover', e=>{e.preventDefault();col.classList.add('dragover');});
+      col.addEventListener('dragleave', ()=>col.classList.remove('dragover'));
+      col.addEventListener('drop', e=>{e.preventDefault();col.classList.remove('dragover');moveTask(e.dataTransfer.getData('text/plain'), key);});
+      board.appendChild(col);
+    }
+  } else {
+    for(const stage of STAGE_COLS){
+      const col = document.createElement('div'); col.className='col';
+      const items = (DATA.articles||[]).filter(a=>a.status===stage);
+      col.innerHTML = `<h2>${stage}<span>${items.length}</span></h2>`;
+      items.forEach(a=>col.appendChild(card(a,false)));
+      board.appendChild(col);
+    }
+  }
+}
+function switchTab(t){ TAB=t; $('tabTasks').classList.toggle('active',t==='tasks'); $('tabArticles').classList.toggle('active',t==='articles'); render(); }
+
+async function ghWrite(path, obj, msg){
+  const token = localStorage.getItem('gh_token');
+  if(!token){ toast('先に⚙設定でトークンを保存してください'); openSettings(); throw new Error('no token'); }
+  const {owner, repo} = guessRepo();
+  const body = { message: msg, content: btoa(unescape(encodeURIComponent(JSON.stringify(obj,null,2)))) };
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+    method:'PUT', headers:{Authorization:'Bearer '+token, Accept:'application/vnd.github+json'}, body:JSON.stringify(body)});
+  if(!res.ok) throw new Error('GitHub API '+res.status);
+}
+
+function openAdd(){ $('dlgAdd').showModal(); }
+function openSettings(){
+  const {owner,repo}=guessRepo(); $('fOwner').value=owner; $('fRepo').value=repo;
+  $('fToken').value = localStorage.getItem('gh_token')||'';
+  $('dlgSettings').showModal();
+}
+function saveSettings(){
+  localStorage.setItem('gh_token', $('fToken').value.trim());
+  localStorage.setItem('gh_owner', $('fOwner').value.trim());
+  localStorage.setItem('gh_repo', $('fRepo').value.trim());
+  $('dlgSettings').close(); toast('保存しました');
+}
+async function submitAdd(){
+  const req = {type:'create', title:$('fTitle').value.trim(), assignee:$('fAssignee').value,
+    priority:$('fPriority').value, description:$('fDesc').value.trim(),
+    requester:'human(board)', requested_at:new Date().toISOString()};
+  if(!req.title){ toast('タイトルは必須です'); return; }
+  try{
+    await ghWrite(`inbox/create-${Date.now()}.json`, req, `board: create ${req.title}`);
+    PENDING.push(req); $('dlgAdd').close(); $('fTitle').value=''; $('fDesc').value='';
+    toast('追加リクエストを送信しました(次回同期で反映)'); render();
+  }catch(e){ toast('送信失敗: '+e.message); }
+}
+async function moveTask(id, to){
+  const t = (DATA.tasks||[]).find(x=>x.id===id);
+  if(!t || t.status===to) return;
+  const req = {type:'move', id, from:t.status, to, requested_at:new Date().toISOString(), requester:'human(board)'};
+  try{
+    await ghWrite(`inbox/move-${id}-${Date.now()}.json`, req, `board: move ${id} -> ${to}`);
+    t.status = to; toast(`${id} を移動しました(次回同期で確定)`); render();
+  }catch(e){ toast('移動失敗: '+e.message); }
+}
+load(); setInterval(load, 120000);
+</script>
+</body>
+</html>

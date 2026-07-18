@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-07-19T01:33:45+09:00",
+  "stages": [
+    "素案",
+    "下書き",
+    "裏取り",
+    "校正",
+    "レビュー",
+    "完了"
+  ],
+  "articles": [
+    {
+      "file": "2026-06-28-サンプル記事.md",
+      "title": "はじめてのローカルLLM：自分にAIを住まわせる3つのステップ",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-06-28",
+      "updated": "2026-07-27",
+      "sources_count": 6
+    },
+    {
+      "file": "2026-06-29-サンプル記事2.md",
+      "title": "2026-06-29-サンプル記事2",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-06-28",
+      "updated": "2026-07-18",
+      "sources_count": 7
+    },
+    {
+      "file": "2026-06-30-記事サンプル3.md",
+      "title": "ローマの知恵—日常に息づく二千年の策略",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-06-30",
+      "updated": "2026-07-16",
+      "sources_count": 6
+    },
+    {
+      "file": "2026-07-05-テスト1.md",
+      "title": "ウイスキーの歴史と、日本でレアなウィスキーを探す方法",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-05",
+      "updated": "2026-07-16",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-09_テスト2.md",
+      "title": "note公式の執筆ガイドラインについて",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-09",
+      "updated": "2026-07-12",
+      "sources_count": 2
+    },
+    {
+      "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
+      "title": "ローカルAIのプリフィル（prefill）の詳細解説",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-09",
+      "updated": "2026-07-17",
+      "sources_count": 3
+    },
+    {
+      "file": "2026-07-09_ローカルAI最新情報まとめ.md",
+      "title": "ローカルAI最新情報まとめ",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-09",
+      "updated": "2026-07-12",
+      "sources_count": 5
+    },
+    {
+      "file": "2026-07-09_子供連れでのハワイアンズでの楽しみ方.md",
+      "title": "福島・ハワイアンズで子供連れを楽しむ方法",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-09",
+      "updated": "2026-07-12",
+      "sources_count": 1
+    }
+  ],
+  "task_statuses": [
+    "todo",
+    "doing",
+    "review",
+    "done",
+    "blocked"
+  ],
+  "tasks": [
+    {
+      "file": "tasks/T-20260705-002_⚠精査_記事サンプル3.md",
+      "id": "T-20260705-002",
+      "title": "⚠精査: 2026-06-30-記事サンプル3",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "review",
+      "priority": "normal",
+      "blocked_reason": "",
+      "created": "2026-07-05",
+      "updated": "2026-07-05"
+    },
+    {
+      "file": "tasks/T-20260709-001_テスト用調査.md",
+      "id": "T-20260709-001",
+      "title": "テスト用調査",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "review",
+      "priority": "P0",
+      "blocked_reason": "",
+      "created": "2026-07-09",
+      "updated": "2026-07-11"
+    },
+    {
+      "file": "tasks/T20260711-001.md",
+      "id": "T20260711-001",
+      "title": "⚠精査: 2026-06-28-サンプル記事.md",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "review",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-11",
+      "updated": "2026-07-11"
+    },
+    {
+      "file": "archive/T-20260705-001_疎通テスト.md",
+      "id": "T-20260705-001",
+      "title": "エージェント間疎通テスト",
+      "project": "agent-infra",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "high",
+      "blocked_reason": "",
+      "created": "2026-07-05",
+      "updated": "2026-07-05"
+    }
+  ]
+}
