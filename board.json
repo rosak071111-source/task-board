@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:47:57+09:00",
+  "generated_at": "2026-07-19T02:52:57+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -113,6 +113,18 @@
       "blocked_reason": "",
       "created": "2026-07-09",
       "updated": "2026-07-11"
+    },
+    {
+      "file": "tasks/T-20260719-001_ジャパニーズウィスキーの歴史.md",
+      "id": "T-20260719-001",
+      "title": "ジャパニーズウィスキーの歴史",
+      "project": "note記事",
+      "assignee": "human",
+      "status": "todo",
+      "priority": "P3",
+      "blocked_reason": "",
+      "created": "2026-07-19",
+      "updated": "2026-07-19"
     },
     {
       "file": "tasks/T20260711-001.md",
