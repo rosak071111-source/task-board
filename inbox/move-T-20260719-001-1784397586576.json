@@ -1,0 +1,8 @@
+{
+  "type": "move",
+  "id": "T-20260719-001",
+  "from": "todo",
+  "to": "done",
+  "requested_at": "2026-07-18T17:59:46.576Z",
+  "requester": "human(board)"
+}
