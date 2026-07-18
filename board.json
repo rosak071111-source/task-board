@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:52:57+09:00",
+  "generated_at": "2026-07-19T03:17:59+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -103,30 +103,6 @@
       "updated": "2026-07-05"
     },
     {
-      "file": "tasks/T-20260709-001_テスト用調査.md",
-      "id": "T-20260709-001",
-      "title": "テスト用調査",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "review",
-      "priority": "P0",
-      "blocked_reason": "",
-      "created": "2026-07-09",
-      "updated": "2026-07-11"
-    },
-    {
-      "file": "tasks/T-20260719-001_ジャパニーズウィスキーの歴史.md",
-      "id": "T-20260719-001",
-      "title": "ジャパニーズウィスキーの歴史",
-      "project": "note記事",
-      "assignee": "human",
-      "status": "todo",
-      "priority": "P3",
-      "blocked_reason": "",
-      "created": "2026-07-19",
-      "updated": "2026-07-19"
-    },
-    {
       "file": "tasks/T20260711-001.md",
       "id": "T20260711-001",
       "title": "⚠精査: 2026-06-28-サンプル記事.md",
@@ -149,6 +125,30 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
+    },
+    {
+      "file": "archive/T-20260709-001_テスト用調査.md",
+      "id": "T-20260709-001",
+      "title": "テスト用調査",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P0",
+      "blocked_reason": "",
+      "created": "2026-07-09",
+      "updated": "2026-07-19"
+    },
+    {
+      "file": "archive/T-20260719-001_ジャパニーズウィスキーの歴史.md",
+      "id": "T-20260719-001",
+      "title": "ジャパニーズウィスキーの歴史",
+      "project": "note記事",
+      "assignee": "human",
+      "status": "done",
+      "priority": "P3",
+      "blocked_reason": "",
+      "created": "2026-07-19",
+      "updated": "2026-07-19"
     }
   ]
 }

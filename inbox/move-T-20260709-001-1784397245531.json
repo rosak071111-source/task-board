@@ -1,8 +1,0 @@
-{
-  "type": "move",
-  "id": "T-20260709-001",
-  "from": "review",
-  "to": "done",
-  "requested_at": "2026-07-18T17:54:05.531Z",
-  "requester": "human(board)"
-}
