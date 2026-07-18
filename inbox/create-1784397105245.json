@@ -1,0 +1,9 @@
+{
+  "type": "create",
+  "title": "ジャパニーズウィスキーの歴史",
+  "assignee": "human",
+  "priority": "P3",
+  "description": "ジャパニーズウィスキーの歴史をまずは導入記事としてざっくり記載する。\n細かな点は今後の詳細記事で補足していくので、そのフックとなるようなものが良い。",
+  "requester": "human(board)",
+  "requested_at": "2026-07-18T17:51:45.245Z"
+}
