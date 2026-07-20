@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T21:16:11+09:00",
+  "generated_at": "2026-07-20T21:46:15+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -57,10 +57,10 @@
     {
       "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
       "title": "ローカルAIのプリフィル（prefill）の詳細解説",
-      "status": "レビュー",
-      "assignee": "human",
+      "status": "下書き",
+      "assignee": "cloud",
       "created": "2026-07-09",
-      "updated": "2026-07-17",
+      "updated": "2026-07-20",
       "sources_count": 3
     },
     {
@@ -82,13 +82,22 @@
       "sources_count": 1
     },
     {
-      "file": "2026-07-20_DGX-SparkとMac-StudioどちらがローカルLLM向きか.md",
-      "title": "DGX SparkとMac Studio、ローカルLLMに向いているのはどっち？",
-      "status": "下書き",
+      "file": "2026-07-20_AIに割り込める時代-GPT-Liveの全二重音声.md",
+      "title": "AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
+      "status": "素案",
       "assignee": "cloud",
       "created": "2026-07-20",
       "updated": "2026-07-20",
-      "sources_count": 7
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-20_DGX-SparkとMac-StudioどちらがローカルLLM向きか.md",
+      "title": "DGX SparkとMac Studio、ローカルLLMに向いているのはどっち？",
+      "status": "裏取り",
+      "assignee": "cloud",
+      "created": "2026-07-20",
+      "updated": "2026-07-20",
+      "sources_count": 16
     }
   ],
   "task_statuses": [
@@ -112,15 +121,15 @@
       "updated": "2026-07-05"
     },
     {
-      "file": "tasks/T-20260720-002_ネタ_GPT-Live全二重音声.md",
-      "id": "T-20260720-002",
-      "title": "【ネタ】AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
+      "file": "tasks/T-20260719-001_ジャパニーズウィスキーの歴史.md",
+      "id": "T-20260719-001",
+      "title": "ジャパニーズウィスキーの歴史",
       "project": "note記事",
       "assignee": "cloud",
       "status": "todo",
-      "priority": "P1",
+      "priority": "P3",
       "blocked_reason": "",
-      "created": "2026-07-20",
+      "created": "2026-07-19",
       "updated": "2026-07-20"
     },
     {
@@ -155,6 +164,18 @@
       "assignee": "cloud",
       "status": "todo",
       "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
+    },
+    {
+      "file": "tasks/T-20260720-006_⚠精査_DGX-SparkとMac-Studio.md",
+      "id": "T-20260720-006",
+      "title": "⚠精査: 2026-07-20_DGX-SparkとMac-StudioどちらがローカルLLM向きか",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-20",
       "updated": "2026-07-20"
@@ -196,18 +217,6 @@
       "updated": "2026-07-19"
     },
     {
-      "file": "archive/T-20260719-001_ジャパニーズウィスキーの歴史.md",
-      "id": "T-20260719-001",
-      "title": "ジャパニーズウィスキーの歴史",
-      "project": "note記事",
-      "assignee": "human",
-      "status": "done",
-      "priority": "P3",
-      "blocked_reason": "",
-      "created": "2026-07-19",
-      "updated": "2026-07-19"
-    },
-    {
       "file": "archive/T-20260720-001_DGX SparkとMac studio でどちらがローカルLLMに向いているか.md",
       "id": "T-20260720-001",
       "title": "DGX SparkとMac studio でどちらがローカルLLMに向いているか",
@@ -215,6 +224,18 @@
       "assignee": "cloud",
       "status": "done",
       "priority": "P0",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
+    },
+    {
+      "file": "archive/T-20260720-002_ネタ_GPT-Live全二重音声.md",
+      "id": "T-20260720-002",
+      "title": "【ネタ】AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-20",
       "updated": "2026-07-20"
