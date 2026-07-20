@@ -150,6 +150,7 @@ function guessRepo(){
   const r = localStorage.getItem('gh_repo') || seg[0] || '';
   return {owner:o, repo:r};
 }
+const DEFAULT_VAULT_REPO = 'obsidian-vault';
 const $ = id => document.getElementById(id);
 function toast(m){ $('toast').textContent=m; $('toast').classList.add('show'); setTimeout(()=>$('toast').classList.remove('show'),2600); }
 
@@ -232,7 +233,7 @@ function openSettings(){
   const {owner,repo}=guessRepo(); $('fOwner').value=owner; $('fRepo').value=repo;
   $('fToken').value = localStorage.getItem('gh_token')||'';
   $('fVaultOwner').value = localStorage.getItem('vault_owner')||'';
-  $('fVaultRepo').value = localStorage.getItem('vault_repo')||'';
+  $('fVaultRepo').value = localStorage.getItem('vault_repo')||DEFAULT_VAULT_REPO;
   $('dlgSettings').showModal();
 }
 function saveSettings(){
@@ -258,7 +259,7 @@ async function openTask(t){
   $('dlgTask').showModal();
   const token = localStorage.getItem('gh_token');
   const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
-  const vr = localStorage.getItem('vault_repo');
+  const vr = localStorage.getItem('vault_repo') || DEFAULT_VAULT_REPO;
   if(!token || !vr){ $('tskBody').innerHTML = '<span class="hint">本文表示には ⚙設定 で PAT と vault repo の設定が必要です(編集・コメントは設定なしでも不可)。</span>'; return; }
   try{
     const path = '_agent_hub/' + (t.file||('tasks/'+t.id+'.md')).split('/').map(encodeURIComponent).join('/');
@@ -314,7 +315,7 @@ async function openArticle(a){
   $('dlgArticle').showModal();
   const token = localStorage.getItem('gh_token');
   const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
-  const vr = localStorage.getItem('vault_repo');
+  const vr = localStorage.getItem('vault_repo') || DEFAULT_VAULT_REPO;
   if(!token || !vr){
     $('artBody').innerHTML = '<span class="hint">本文を表示するには ⚙設定 で PAT と vault repo を設定してください(GitHub Mobileアプリで直接開く方法もあります)。</span>';
     return;
