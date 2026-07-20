@@ -1,0 +1,9 @@
+{
+  "type": "article_review",
+  "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
+  "action": "return",
+  "to_stage": "下書き",
+  "reason": "文章が途中で終わってしまっているので、改めて下書きを作り直し",
+  "requested_at": "2026-07-20T12:41:08.456Z",
+  "requester": "human(board)"
+}
