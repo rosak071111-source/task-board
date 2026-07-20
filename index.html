@@ -84,6 +84,24 @@
   <footer><button class="btn" onclick="dlgAdd.close()">キャンセル</button><button class="btn primary" onclick="submitAdd()">追加</button></footer>
 </dialog>
 
+<dialog id="dlgTask" style="width:720px;max-width:96vw">
+  <h3 id="tskTitle" style="word-break:break-all"></h3>
+  <div id="tskMeta" class="hint" style="margin-bottom:10px"></div>
+  <div id="tskBody" style="max-height:38vh;overflow-y:auto;font-size:13px;line-height:1.7;
+    border:1px solid var(--line);border-radius:8px;padding:14px;background:#0a1020"></div>
+  <div class="row" style="margin-top:12px">
+    <div><label>状態(差し戻しは todo へ)</label><select id="tskStatus"><option>todo</option><option>doing</option><option>review</option><option>blocked</option><option>done</option></select></div>
+    <div><label>担当</label><select id="tskAssignee"><option>cloud</option><option>local</option><option>human</option></select></div>
+    <div><label>優先度</label><select id="tskPriority"><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select></div>
+  </div>
+  <label>コメント(ログに [human] として追記。差し戻し時は指示を書く)</label>
+  <textarea id="tskComment" rows="3" placeholder="例: 方向性が違う。◯◯の観点でやり直して"></textarea>
+  <footer>
+    <button class="btn" onclick="dlgTask.close()">閉じる</button>
+    <button class="btn primary" onclick="submitTaskUpdate()">保存</button>
+  </footer>
+</dialog>
+
 <dialog id="dlgArticle" style="width:720px;max-width:96vw">
   <h3 id="artTitle" style="word-break:break-all"></h3>
   <div id="artMeta" class="hint" style="margin-bottom:10px"></div>
@@ -160,7 +178,10 @@ function card(t, isTask){
     (t._pending?`<div class="reason" style="color:var(--sub)">⏳ 同期待ち</div>`:'');
   if(isTask && !t._pending){
     div.draggable = true;
-    div.addEventListener('dragstart', e=>e.dataTransfer.setData('text/plain', t.id));
+    div.addEventListener('dragstart', e=>{ DRAGGING=true; e.dataTransfer.setData('text/plain', t.id); });
+    div.addEventListener('dragend', ()=>setTimeout(()=>DRAGGING=false, 80));
+    div.style.cursor = 'pointer';
+    div.addEventListener('click', ()=>{ if(!DRAGGING) openTask(t); });
   }
   if(!isTask && !t._pending){
     div.style.cursor = 'pointer';
@@ -221,6 +242,50 @@ function saveSettings(){
   localStorage.setItem('vault_owner', $('fVaultOwner').value.trim());
   localStorage.setItem('vault_repo', $('fVaultRepo').value.trim());
   $('dlgSettings').close(); toast('保存しました');
+}
+
+// ---- タスク詳細・編集 ----
+let CUR_TASK = null, DRAGGING = false;
+async function openTask(t){
+  CUR_TASK = t;
+  $('tskTitle').textContent = `${t.id} ${t.title}`;
+  $('tskMeta').textContent = `状態: ${t.status} / 担当: ${t.assignee||'-'} / ${t.priority||'-'} / 更新: ${t.updated||'-'}`;
+  $('tskStatus').value = t.status || 'todo';
+  $('tskAssignee').value = t.assignee || 'cloud';
+  $('tskPriority').value = t.priority || 'P2';
+  $('tskComment').value = '';
+  $('tskBody').innerHTML = '<span class="hint">読み込み中…</span>';
+  $('dlgTask').showModal();
+  const token = localStorage.getItem('gh_token');
+  const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
+  const vr = localStorage.getItem('vault_repo');
+  if(!token || !vr){ $('tskBody').innerHTML = '<span class="hint">本文表示には ⚙設定 で PAT と vault repo の設定が必要です(編集・コメントは設定なしでも不可)。</span>'; return; }
+  try{
+    const path = '_agent_hub/' + (t.file||('tasks/'+t.id+'.md')).split('/').map(encodeURIComponent).join('/');
+    const res = await fetch(`https://api.github.com/repos/${vo}/${vr}/contents/${path}`,
+      {headers:{Authorization:'Bearer '+token, Accept:'application/vnd.github.raw+json'}});
+    if(!res.ok) throw new Error('GitHub API '+res.status);
+    $('tskBody').innerHTML = miniMd(await res.text());
+  }catch(e){ $('tskBody').innerHTML = `<span class="hint">取得失敗: ${esc(e.message)}</span>`; }
+}
+async function submitTaskUpdate(){
+  const t = CUR_TASK; if(!t) return;
+  const set = {};
+  if($('tskStatus').value !== t.status) set.status = $('tskStatus').value;
+  if($('tskAssignee').value !== (t.assignee||'')) set.assignee = $('tskAssignee').value;
+  if($('tskPriority').value !== (t.priority||'')) set.priority = $('tskPriority').value;
+  const comment = $('tskComment').value.trim();
+  if(!Object.keys(set).length && !comment){ toast('変更がありません'); return; }
+  if(set.status && ['todo','doing'].includes(set.status) && t.status!=='todo' && !comment){
+    toast('差し戻し時はコメントで指示を書いてください'); return;
+  }
+  const req = {type:'task_update', id:t.id, file:t.file, set, comment,
+    requested_at:new Date().toISOString(), requester:'human(board)'};
+  try{
+    await ghWrite(`inbox/update-${t.id}-${Date.now()}.json`, req, `board: update ${t.id}`);
+    Object.assign(t, set); $('dlgTask').close();
+    toast('更新リクエストを送信しました(次回同期で反映)'); render();
+  }catch(e){ toast('送信失敗: '+e.message); }
 }
 
 // ---- 記事ビューア & レビュー ----
