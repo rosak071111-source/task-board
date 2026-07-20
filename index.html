@@ -84,15 +84,39 @@
   <footer><button class="btn" onclick="dlgAdd.close()">キャンセル</button><button class="btn primary" onclick="submitAdd()">追加</button></footer>
 </dialog>
 
+<dialog id="dlgArticle" style="width:720px;max-width:96vw">
+  <h3 id="artTitle" style="word-break:break-all"></h3>
+  <div id="artMeta" class="hint" style="margin-bottom:10px"></div>
+  <div id="artBody" style="max-height:55vh;overflow-y:auto;font-size:13px;line-height:1.75;
+    border:1px solid var(--line);border-radius:8px;padding:14px;background:#0a1020"></div>
+  <div id="artReview" style="display:none;margin-top:14px">
+    <div class="row">
+      <div><label>差し戻し先</label><select id="fReturnStage"><option>校正</option><option>裏取り</option><option>下書き</option><option>素案</option></select></div>
+      <div style="flex:2"><label>差し戻し理由(差し戻し時は必須)</label><input id="fReturnReason" placeholder="例: 3章の主張の出典が弱い"></div>
+    </div>
+  </div>
+  <footer>
+    <button class="btn" onclick="dlgArticle.close()">閉じる</button>
+    <span id="artActions" style="display:none">
+      <button class="btn" onclick="reviewArticle('return')">↩ 差し戻し</button>
+      <button class="btn primary" onclick="reviewArticle('approve')">✅ 承認して完了</button>
+    </span>
+  </footer>
+</dialog>
+
 <dialog id="dlgSettings">
   <h3>設定</h3>
-  <label>GitHub Personal Access Token (fine-grained / このリポジトリのContents: Read and write のみ)</label>
+  <label>GitHub Personal Access Token (fine-grained / task-board と Vaultリポジトリの Contents: Read and write)</label>
   <input id="fToken" type="password" placeholder="github_pat_...">
   <div class="row">
-    <div><label>owner</label><input id="fOwner"></div>
-    <div><label>repo</label><input id="fRepo"></div>
+    <div><label>board owner</label><input id="fOwner"></div>
+    <div><label>board repo</label><input id="fRepo"></div>
   </div>
-  <p class="hint">トークンはこのブラウザのlocalStorageにのみ保存されます。追加・移動の操作は inbox/ に変更リクエストとして書き込まれ、Mac側の同期バッチ(30分毎)がVaultに反映します。</p>
+  <div class="row">
+    <div><label>vault owner(記事本文の取得元)</label><input id="fVaultOwner" placeholder="同じowner"></div>
+    <div><label>vault repo(プライベート)</label><input id="fVaultRepo" placeholder="obsidian-vault"></div>
+  </div>
+  <p class="hint">トークンはこのブラウザのlocalStorageにのみ保存されます。操作は inbox/ に変更リクエストとして書き込まれ、Mac側の同期バッチ(30分毎)がVaultに反映します。記事本文はvaultリポジトリからPAT認証で取得され、公開ページには含まれません。</p>
   <footer><button class="btn" onclick="dlgSettings.close()">閉じる</button><button class="btn primary" onclick="saveSettings()">保存</button></footer>
 </dialog>
 <div id="toast"></div>
@@ -138,6 +162,10 @@ function card(t, isTask){
     div.draggable = true;
     div.addEventListener('dragstart', e=>e.dataTransfer.setData('text/plain', t.id));
   }
+  if(!isTask && !t._pending){
+    div.style.cursor = 'pointer';
+    div.addEventListener('click', ()=>openArticle(t));
+  }
   return div;
 }
 function esc(s){ return String(s??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -182,13 +210,70 @@ function openAdd(){ $('dlgAdd').showModal(); }
 function openSettings(){
   const {owner,repo}=guessRepo(); $('fOwner').value=owner; $('fRepo').value=repo;
   $('fToken').value = localStorage.getItem('gh_token')||'';
+  $('fVaultOwner').value = localStorage.getItem('vault_owner')||'';
+  $('fVaultRepo').value = localStorage.getItem('vault_repo')||'';
   $('dlgSettings').showModal();
 }
 function saveSettings(){
   localStorage.setItem('gh_token', $('fToken').value.trim());
   localStorage.setItem('gh_owner', $('fOwner').value.trim());
   localStorage.setItem('gh_repo', $('fRepo').value.trim());
+  localStorage.setItem('vault_owner', $('fVaultOwner').value.trim());
+  localStorage.setItem('vault_repo', $('fVaultRepo').value.trim());
   $('dlgSettings').close(); toast('保存しました');
+}
+
+// ---- 記事ビューア & レビュー ----
+let CUR_ARTICLE = null;
+function miniMd(src){
+  let t = esc(src);
+  t = t.replace(/^---\n[\s\S]*?\n---\n/, '');                       // frontmatter除去
+  t = t.replace(/^###### (.*)$/gm,'<h6>$1</h6>').replace(/^##### (.*)$/gm,'<h5>$1</h5>')
+       .replace(/^#### (.*)$/gm,'<h4>$1</h4>').replace(/^### (.*)$/gm,'<h3 style="margin:14px 0 6px;color:var(--neon)">$1</h3>')
+       .replace(/^## (.*)$/gm,'<h2 style="margin:18px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px">$1</h2>')
+       .replace(/^# (.*)$/gm,'<h1 style="margin:18px 0 8px;font-size:18px">$1</h1>');
+  t = t.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
+  t = t.replace(/(https?:\/\/[^\s)&<]+)/g,'<a href="$1" target="_blank" style="color:var(--neon)">$1</a>');
+  t = t.replace(/^- (.*)$/gm,'<div style="padding-left:1em">・$1</div>');
+  t = t.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
+  return t;
+}
+async function openArticle(a){
+  CUR_ARTICLE = a;
+  $('artTitle').textContent = a.title;
+  $('artMeta').textContent = `工程: ${a.status} / 担当: ${a.assignee||'-'} / 更新: ${a.updated||'-'} / ${a.file}`;
+  const isReview = a.status === 'レビュー';
+  $('artReview').style.display = isReview ? 'block' : 'none';
+  $('artActions').style.display = isReview ? 'inline' : 'none';
+  $('artBody').innerHTML = '<span class="hint">読み込み中…</span>';
+  $('dlgArticle').showModal();
+  const token = localStorage.getItem('gh_token');
+  const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
+  const vr = localStorage.getItem('vault_repo');
+  if(!token || !vr){
+    $('artBody').innerHTML = '<span class="hint">本文を表示するには ⚙設定 で PAT と vault repo を設定してください(GitHub Mobileアプリで直接開く方法もあります)。</span>';
+    return;
+  }
+  try{
+    const res = await fetch(`https://api.github.com/repos/${vo}/${vr}/contents/articles/${encodeURIComponent(a.file)}`,
+      {headers:{Authorization:'Bearer '+token, Accept:'application/vnd.github.raw+json'}});
+    if(!res.ok) throw new Error('GitHub API '+res.status);
+    $('artBody').innerHTML = miniMd(await res.text());
+  }catch(e){ $('artBody').innerHTML = `<span class="hint">取得失敗: ${esc(e.message)}(vault repoへのpush・PAT権限を確認)</span>`; }
+}
+async function reviewArticle(action){
+  const a = CUR_ARTICLE; if(!a) return;
+  const reason = $('fReturnReason').value.trim();
+  if(action==='return' && !reason){ toast('差し戻し理由を入力してください'); return; }
+  const req = {type:'article_review', file:a.file, action,
+    to_stage: action==='approve' ? '完了' : $('fReturnStage').value,
+    reason, requested_at:new Date().toISOString(), requester:'human(board)'};
+  try{
+    await ghWrite(`inbox/review-${Date.now()}.json`, req, `board: ${action} ${a.file}`);
+    a.status = req.to_stage; $('dlgArticle').close(); $('fReturnReason').value='';
+    toast(action==='approve' ? '承認しました(次回同期で確定)' : `${req.to_stage}へ差し戻しました(次回同期で確定)`);
+    render();
+  }catch(e){ toast('送信失敗: '+e.message); }
 }
 async function submitAdd(){
   const req = {type:'create', title:$('fTitle').value.trim(), assignee:$('fAssignee').value,
