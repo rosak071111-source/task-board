@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T05:47:17+09:00",
+  "generated_at": "2026-07-21T06:17:21+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -57,10 +57,10 @@
     {
       "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
       "title": "ローカルAIのプリフィル（prefill）の詳細解説",
-      "status": "下書き",
+      "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-07-09",
-      "updated": "2026-07-20",
+      "updated": "2026-07-21",
       "sources_count": 3
     },
     {
@@ -84,20 +84,29 @@
     {
       "file": "2026-07-20_AIに割り込める時代-GPT-Liveの全二重音声.md",
       "title": "AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
-      "status": "素案",
+      "status": "下書き",
       "assignee": "cloud",
       "created": "2026-07-20",
-      "updated": "2026-07-20",
+      "updated": "2026-07-21",
       "sources_count": 1
     },
     {
       "file": "2026-07-20_DGX-SparkとMac-StudioどちらがローカルLLM向きか.md",
       "title": "DGX SparkとMac Studio、ローカルLLMに向いているのはどっち？",
-      "status": "校正",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-20",
-      "updated": "2026-07-20",
+      "updated": "2026-07-21",
       "sources_count": 19
+    },
+    {
+      "file": "2026-07-21_ジャパニーズウィスキーの歴史.md",
+      "title": "ジャパニーズウィスキーの歴史（導入編）",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-21",
+      "updated": "2026-07-21",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -119,18 +128,6 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
-    },
-    {
-      "file": "tasks/T-20260719-001_ジャパニーズウィスキーの歴史.md",
-      "id": "T-20260719-001",
-      "title": "ジャパニーズウィスキーの歴史",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P3",
-      "blocked_reason": "",
-      "created": "2026-07-19",
-      "updated": "2026-07-20"
     },
     {
       "file": "tasks/T-20260720-003_ネタ_半固体電池モバイルバッテリー.md",
@@ -203,6 +200,18 @@
       "blocked_reason": "",
       "created": "2026-07-09",
       "updated": "2026-07-19"
+    },
+    {
+      "file": "archive/T-20260719-001_ジャパニーズウィスキーの歴史.md",
+      "id": "T-20260719-001",
+      "title": "ジャパニーズウィスキーの歴史",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P3",
+      "blocked_reason": "",
+      "created": "2026-07-19",
+      "updated": "2026-07-21"
     },
     {
       "file": "archive/T-20260720-001_DGX SparkとMac studio でどちらがローカルLLMに向いているか.md",
