@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:45:59+09:00",
+  "generated_at": "2026-07-20T20:16:02+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -84,11 +84,11 @@
     {
       "file": "2026-07-20_DGX-SparkとMac-StudioどちらがローカルLLM向きか.md",
       "title": "DGX SparkとMac Studio、ローカルLLMに向いているのはどっち？",
-      "status": "素案",
+      "status": "下書き",
       "assignee": "cloud",
       "created": "2026-07-20",
       "updated": "2026-07-20",
-      "sources_count": 1
+      "sources_count": 7
     }
   ],
   "task_statuses": [
@@ -110,6 +110,54 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
+    },
+    {
+      "file": "tasks/T-20260720-002_ネタ_GPT-Live全二重音声.md",
+      "id": "T-20260720-002",
+      "title": "【ネタ】AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
+    },
+    {
+      "file": "tasks/T-20260720-003_ネタ_半固体電池モバイルバッテリー.md",
+      "id": "T-20260720-003",
+      "title": "【ネタ】「燃えないモバイルバッテリー」半固体電池は本当に買いか",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
+    },
+    {
+      "file": "tasks/T-20260720-004_ネタ_労基法改正と副業.md",
+      "id": "T-20260720-004",
+      "title": "【ネタ】副業の「労働時間通算」がなくなる？40年ぶり労基法大改正を会社員目線で読む",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
+    },
+    {
+      "file": "tasks/T-20260720-005_ネタ_路線価過去最大の上昇.md",
+      "id": "T-20260720-005",
+      "title": "【ネタ】路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
     },
     {
       "file": "tasks/T20260711-001.md",
