@@ -1,0 +1,9 @@
+{
+  "type": "create",
+  "title": "DGX SparkとMac studio でどちらがローカルLLMに向いているか",
+  "assignee": "cloud",
+  "priority": "P0",
+  "description": "DGX SparkとMac studio でどちらがローカルLLMに向いているか、比較して記事にして欲しい",
+  "requester": "human(board)",
+  "requested_at": "2026-07-20T07:33:50.965Z"
+}
