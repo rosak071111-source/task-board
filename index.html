@@ -58,6 +58,24 @@
     pointer-events:none;box-shadow:0 0 18px rgba(0,229,255,.35)}
   #toast.show{opacity:1}
   .hint{font-size:11px;color:var(--sub);margin-top:6px}
+  /* ---- スマートフォン対応 ---- */
+  @media (max-width:640px){
+    header{flex-wrap:wrap;gap:6px;padding:10px 12px}
+    header h1{font-size:13px;letter-spacing:.08em;width:100%}
+    header .meta{order:5;width:100%;margin:0}
+    .tabs button{padding:6px 10px;font-size:13px}
+    .btn{padding:6px 10px;font-size:12px;white-space:nowrap}
+    #board{gap:10px;padding:12px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      min-height:calc(100vh - 100px)}
+    .col{min-width:82vw;width:82vw;scroll-snap-align:center}
+    .card{font-size:13px}
+    .card .title{font-size:14px}
+    dialog{padding:14px;width:96vw}
+    dialog .row{flex-wrap:wrap}
+    dialog .row>div{flex:1 1 45%;min-width:120px}
+    #artBody{max-height:48vh}
+    #tskBody{max-height:32vh}
+  }
 </style>
 </head>
 <body>
@@ -115,6 +133,7 @@
   </div>
   <footer>
     <button class="btn" onclick="dlgArticle.close()">閉じる</button>
+    <button class="btn" id="btnCopyNote" style="display:none" onclick="copyNoteBody()">📋 note用本文をコピー</button>
     <span id="artActions" style="display:none">
       <button class="btn" onclick="reviewArticle('return')">↩ 差し戻し</button>
       <button class="btn primary" onclick="reviewArticle('approve')">✅ 承認して完了</button>
@@ -153,6 +172,11 @@ function guessRepo(){
 const DEFAULT_VAULT_REPO = 'obsidian-vault';
 const $ = id => document.getElementById(id);
 function toast(m){ $('toast').textContent=m; $('toast').classList.add('show'); setTimeout(()=>$('toast').classList.remove('show'),2600); }
+function safeShow(dlg){ // モバイルのゴーストタップ吸収: 開いた直後は操作を無効化
+  dlg.showModal();
+  dlg.style.pointerEvents='none';
+  setTimeout(()=>{ dlg.style.pointerEvents=''; }, 350);
+}
 
 async function load(){
   try{
@@ -256,7 +280,7 @@ async function openTask(t){
   $('tskPriority').value = t.priority || 'P2';
   $('tskComment').value = '';
   $('tskBody').innerHTML = '<span class="hint">読み込み中…</span>';
-  $('dlgTask').showModal();
+  safeShow($('dlgTask'));
   const token = localStorage.getItem('gh_token');
   const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
   const vr = localStorage.getItem('vault_repo') || DEFAULT_VAULT_REPO;
@@ -290,7 +314,21 @@ async function submitTaskUpdate(){
 }
 
 // ---- 記事ビューア & レビュー ----
-let CUR_ARTICLE = null;
+let CUR_ARTICLE = null, CUR_RAW = '';
+async function copyNoteBody(){
+  const i = CUR_RAW.indexOf('## 公開用');
+  if(i < 0){ toast('公開用セクションがありません'); return; }
+  const s = CUR_RAW.indexOf('### 本文', i);
+  if(s < 0){ toast('公開用の本文が見つかりません'); return; }
+  let body = CUR_RAW.slice(s + '### 本文'.length);
+  const e = body.indexOf('\n### タイトル案');
+  if(e > 0) body = body.slice(0, e);
+  body = body.trim();
+  try{
+    await navigator.clipboard.writeText(body);
+    toast('note用本文をコピーしました。noteエディタに貼り付けてください');
+  }catch(err){ toast('コピー失敗: '+err.message); }
+}
 function miniMd(src){
   let t = esc(src);
   t = t.replace(/^---\n[\s\S]*?\n---\n/, '');                       // frontmatter除去
@@ -312,7 +350,8 @@ async function openArticle(a){
   $('artReview').style.display = isReview ? 'block' : 'none';
   $('artActions').style.display = isReview ? 'inline' : 'none';
   $('artBody').innerHTML = '<span class="hint">読み込み中…</span>';
-  $('dlgArticle').showModal();
+  CUR_RAW = ''; $('btnCopyNote').style.display = 'none';
+  safeShow($('dlgArticle'));
   const token = localStorage.getItem('gh_token');
   const vo = localStorage.getItem('vault_owner')||guessRepo().owner;
   const vr = localStorage.getItem('vault_repo') || DEFAULT_VAULT_REPO;
@@ -324,7 +363,9 @@ async function openArticle(a){
     const res = await fetch(`https://api.github.com/repos/${vo}/${vr}/contents/articles/${encodeURIComponent(a.file)}`,
       {headers:{Authorization:'Bearer '+token, Accept:'application/vnd.github.raw+json'}});
     if(!res.ok) throw new Error('GitHub API '+res.status);
-    $('artBody').innerHTML = miniMd(await res.text());
+    CUR_RAW = await res.text();
+    $('artBody').innerHTML = miniMd(CUR_RAW);
+    if(CUR_RAW.includes('## 公開用')) $('btnCopyNote').style.display = 'inline';
   }catch(e){ $('artBody').innerHTML = `<span class="hint">取得失敗: ${esc(e.message)}(vault repoへのpush・PAT権限を確認)</span>`; }
 }
 async function reviewArticle(action){

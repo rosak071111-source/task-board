@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T16:15:29+09:00",
+  "generated_at": "2026-07-20T16:45:34+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -101,6 +101,18 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
+    },
+    {
+      "file": "tasks/T-20260720-001_DGX SparkとMac studio でどちらがローカルLLMに向いているか.md",
+      "id": "T-20260720-001",
+      "title": "DGX SparkとMac studio でどちらがローカルLLMに向いているか",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P0",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-20"
     },
     {
       "file": "tasks/T20260711-001.md",
