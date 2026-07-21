@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T14:48:24+09:00",
+  "generated_at": "2026-07-21T15:18:28+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -57,11 +57,11 @@
     {
       "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
       "title": "ローカルAIのプリフィル（prefill）の詳細解説",
-      "status": "裏取り",
+      "status": "校正",
       "assignee": "cloud",
       "created": "2026-07-09",
       "updated": "2026-07-21",
-      "sources_count": 3
+      "sources_count": 8
     },
     {
       "file": "2026-07-09_ローカルAI最新情報まとめ.md",
@@ -102,7 +102,7 @@
     {
       "file": "2026-07-21_ジャパニーズウィスキーの歴史.md",
       "title": "ジャパニーズウィスキーの歴史（導入編）",
-      "status": "素案",
+      "status": "下書き",
       "assignee": "cloud",
       "created": "2026-07-21",
       "updated": "2026-07-21",
