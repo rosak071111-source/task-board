@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T22:19:32+09:00",
+  "generated_at": "2026-07-21T22:49:37+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -84,8 +84,8 @@
     {
       "file": "2026-07-20_AIに割り込める時代-GPT-Liveの全二重音声.md",
       "title": "AIに「割り込める」時代が来た──GPT-Liveの全二重音声がすごい理由",
-      "status": "裏取り",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-20",
       "updated": "2026-07-21",
       "sources_count": 5
@@ -102,8 +102,8 @@
     {
       "file": "2026-07-21_ジャパニーズウィスキーの歴史.md",
       "title": "ジャパニーズウィスキーの歴史（導入編）",
-      "status": "裏取り",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-21",
       "updated": "2026-07-21",
       "sources_count": 10
