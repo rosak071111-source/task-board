@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:48:51+09:00",
+  "generated_at": "2026-07-21T18:18:55+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -57,8 +57,8 @@
     {
       "file": "2026-07-09_ローカルAIのプリフィルの詳細解説.md",
       "title": "ローカルAIのプリフィル（prefill）の詳細解説",
-      "status": "校正",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-09",
       "updated": "2026-07-21",
       "sources_count": 8
