@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T23:49:46+09:00",
+  "generated_at": "2026-07-22T00:19:51+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -107,6 +107,15 @@
       "created": "2026-07-21",
       "updated": "2026-07-21",
       "sources_count": 10
+    },
+    {
+      "file": "2026-07-22_路線価が過去最大の上昇と家計への関係.md",
+      "title": "路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
+      "status": "素案",
+      "assignee": "human",
+      "created": "2026-07-22",
+      "updated": "2026-07-22",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -149,18 +158,6 @@
       "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-20",
-      "updated": "2026-07-20"
-    },
-    {
-      "file": "tasks/T-20260720-005_ネタ_路線価過去最大の上昇.md",
-      "id": "T-20260720-005",
-      "title": "【ネタ】路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-20",
       "updated": "2026-07-20"
@@ -236,6 +233,18 @@
       "blocked_reason": "",
       "created": "2026-07-20",
       "updated": "2026-07-20"
+    },
+    {
+      "file": "archive/T-20260720-005_ネタ_路線価過去最大の上昇.md",
+      "id": "T-20260720-005",
+      "title": "【ネタ】路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-22"
     },
     {
       "file": "archive/T-20260720-006_⚠精査_DGX-SparkとMac-Studio.md",
