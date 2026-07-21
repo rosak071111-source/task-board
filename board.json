@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T02:50:15+09:00",
+  "generated_at": "2026-07-22T03:20:20+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -109,6 +109,15 @@
       "sources_count": 10
     },
     {
+      "file": "2026-07-22_半固体電池モバイルバッテリーは買いか.md",
+      "title": "「燃えないモバイルバッテリー」半固体電池は本当に買いか",
+      "status": "素案",
+      "assignee": "human",
+      "created": "2026-07-22",
+      "updated": "2026-07-22",
+      "sources_count": 1
+    },
+    {
       "file": "2026-07-22_路線価が過去最大の上昇と家計への関係.md",
       "title": "路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
       "status": "素案",
@@ -137,18 +146,6 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
-    },
-    {
-      "file": "tasks/T-20260720-003_ネタ_半固体電池モバイルバッテリー.md",
-      "id": "T-20260720-003",
-      "title": "【ネタ】「燃えないモバイルバッテリー」半固体電池は本当に買いか",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-20",
-      "updated": "2026-07-20"
     },
     {
       "file": "tasks/T-20260720-004_ネタ_労基法改正と副業.md",
@@ -233,6 +230,18 @@
       "blocked_reason": "",
       "created": "2026-07-20",
       "updated": "2026-07-20"
+    },
+    {
+      "file": "archive/T-20260720-003_ネタ_半固体電池モバイルバッテリー.md",
+      "id": "T-20260720-003",
+      "title": "【ネタ】「燃えないモバイルバッテリー」半固体電池は本当に買いか",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-20",
+      "updated": "2026-07-22"
     },
     {
       "file": "archive/T-20260720-005_ネタ_路線価過去最大の上昇.md",
