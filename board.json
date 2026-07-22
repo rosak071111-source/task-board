@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T08:51:09+09:00",
+  "generated_at": "2026-07-22T09:21:13+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -111,20 +111,20 @@
     {
       "file": "2026-07-22_半固体電池モバイルバッテリーは買いか.md",
       "title": "「燃えないモバイルバッテリー」半固体電池は本当に買いか",
-      "status": "下書き",
+      "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-07-22",
       "updated": "2026-07-22",
-      "sources_count": 1
+      "sources_count": 3
     },
     {
       "file": "2026-07-22_路線価が過去最大の上昇と家計への関係.md",
       "title": "路線価が過去最大の上昇。ニュースの数字が自分の家計に届くまで",
-      "status": "下書き",
+      "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-07-22",
       "updated": "2026-07-22",
-      "sources_count": 1
+      "sources_count": 3
     }
   ],
   "task_statuses": [
