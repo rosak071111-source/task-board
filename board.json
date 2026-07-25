@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T05:38:03+09:00",
+  "generated_at": "2026-07-26T06:08:08+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -138,7 +138,7 @@
     {
       "file": "2026-07-25_AIに仕事を任せるが本番に.md",
       "title": "「AIに仕事を任せる」が本番に──2026年のAIエージェント三国志を仕事目線で読む",
-      "status": "レビュー",
+      "status": "完了",
       "assignee": "human",
       "created": "2026-07-25",
       "updated": "2026-07-26",
@@ -146,12 +146,12 @@
     },
     {
       "file": "2026-07-25_メガバンクの生成AI活用2026から会社員が盗めること.md",
-      "title": "2026-07-25_メガバンクの生成AI活用2026から会社員が盗めること",
-      "status": "",
-      "assignee": "",
-      "created": "",
-      "updated": "",
-      "sources_count": 1
+      "title": "稟議が数時間→10分に。メガバンクの生成AI活用2026から会社員が盗めること",
+      "status": "完了",
+      "assignee": "human",
+      "created": "2026-07-25",
+      "updated": "2026-07-26",
+      "sources_count": 3
     },
     {
       "file": "2026-07-25_在宅ワークで集中が切れないための休憩のとり方.md",
@@ -183,7 +183,7 @@
     {
       "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
       "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
-      "status": "レビュー",
+      "status": "完了",
       "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
@@ -192,7 +192,7 @@
     {
       "file": "2026-07-26_AI音声なりすまし詐欺_金融パーソンが今すぐ知るべき手口と防ぎ方.md",
       "title": "「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
-      "status": "レビュー",
+      "status": "完了",
       "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
@@ -210,20 +210,20 @@
     {
       "file": "2026-07-26_会議のメモから解放される_AIボイスレコーダーが変える聞く仕事2026.md",
       "title": "会議のメモから解放される──AIボイスレコーダーが変える\"聞く仕事\"2026",
-      "status": "校正",
-      "assignee": "gemini",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 4
     },
     {
       "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
-      "title": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表",
-      "status": "",
-      "assignee": "",
-      "created": "",
-      "updated": "",
-      "sources_count": 1
+      "title": "結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
+      "status": "完了",
+      "assignee": "human",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 4
     }
   ],
   "task_statuses": [
