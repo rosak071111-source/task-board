@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T22:36:45+09:00",
+  "generated_at": "2026-07-25T23:06:50+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -165,11 +165,11 @@
     {
       "file": "2026-07-25_無料で使える最新AIがすごいことになってる.md",
       "title": "無料で使える最新AIがすごいことになってる──Qwen3.5・DeepSeek・GLM-5.2、2026夏のオープンモデル早わかり",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-25",
       "updated": "2026-07-25",
-      "sources_count": 1
+      "sources_count": 2
     },
     {
       "file": "2026-07-25_金融実務のためのローカルLLM×RAG導入ガイド.md",
