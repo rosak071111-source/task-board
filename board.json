@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T00:07:01+09:00",
+  "generated_at": "2026-07-26T00:37:07+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -141,7 +141,7 @@
       "status": "下書き",
       "assignee": "local",
       "created": "2026-07-25",
-      "updated": "2026-07-25",
+      "updated": "2026-07-26",
       "sources_count": 1
     },
     {
@@ -174,11 +174,38 @@
     {
       "file": "2026-07-25_金融実務のためのローカルLLM×RAG導入ガイド.md",
       "title": "機密を一切外に出さない社内AIを作る──金融実務のためのローカルLLM×RAG導入ガイド2026",
-      "status": "下書き",
+      "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-07-25",
-      "updated": "2026-07-25T21:20",
+      "updated": "2026-07-26",
       "sources_count": 6
+    },
+    {
+      "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
+      "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-26_ローカルLLM本格構築とTCO完全ガイド2026.md",
+      "title": "月額課金に頼らない自前AI環境──ローカルLLM本格構築＆運用コスト完全ガイド2026",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
+      "title": "結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -202,30 +229,6 @@
       "updated": "2026-07-05"
     },
     {
-      "file": "tasks/T-20260725-002_ネタ_ローカルLLM入門ハード選び.md",
-      "id": "T-20260725-002",
-      "title": "【ネタ】3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-25",
-      "updated": "2026-07-25"
-    },
-    {
-      "file": "tasks/T-20260725-005_ネタ_Claude_ChatGPT_Gemini使い分け.md",
-      "id": "T-20260725-005",
-      "title": "【ネタ】結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-25",
-      "updated": "2026-07-25"
-    },
-    {
       "file": "tasks/T-20260725-007_ネタ_AI音声なりすまし詐欺対策.md",
       "id": "T-20260725-007",
       "title": "【ネタ】「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
@@ -243,18 +246,6 @@
       "title": "【ネタ】会議のメモから解放される──AIボイスレコーダーが変える\"聞く仕事\"2026",
       "project": "note記事",
       "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-25",
-      "updated": "2026-07-25"
-    },
-    {
-      "file": "tasks/T-20260725-010_ネタ有料_ローカルLLM本格環境構築完全ガイド.md",
-      "id": "T-20260725-010",
-      "title": "【ネタ・有料】月額課金に頼らない自前AI環境──ローカルLLM本格構築＆運用コスト完全ガイド2026",
-      "project": "note記事",
-      "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
       "blocked_reason": "",
@@ -394,6 +385,18 @@
       "updated": "2026-07-25"
     },
     {
+      "file": "archive/T-20260725-002_ネタ_ローカルLLM入門ハード選び.md",
+      "id": "T-20260725-002",
+      "title": "【ネタ】3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-26"
+    },
+    {
       "file": "archive/T-20260725-003_ネタ_最新オープンモデル比較2026.md",
       "id": "T-20260725-003",
       "title": "【ネタ】無料で使える最新AIがすごいことになってる──Qwen3.5・DeepSeek・GLM-5.2、2026夏のオープンモデル早わかり",
@@ -418,6 +421,18 @@
       "updated": "2026-07-25"
     },
     {
+      "file": "archive/T-20260725-005_ネタ_Claude_ChatGPT_Gemini使い分け.md",
+      "id": "T-20260725-005",
+      "title": "【ネタ】結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-26"
+    },
+    {
       "file": "archive/T-20260725-006_ネタ_メガバンク生成AI活用2026.md",
       "id": "T-20260725-006",
       "title": "【ネタ】稟議が数時間→10分に。メガバンクの生成AI活用2026から会社員が盗めること",
@@ -440,6 +455,18 @@
       "blocked_reason": "",
       "created": "2026-07-25",
       "updated": "2026-07-25T21:15"
+    },
+    {
+      "file": "archive/T-20260725-010_ネタ有料_ローカルLLM本格環境構築完全ガイド.md",
+      "id": "T-20260725-010",
+      "title": "【ネタ・有料】月額課金に頼らない自前AI環境──ローカルLLM本格構築＆運用コスト完全ガイド2026",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-26"
     }
   ]
 }
