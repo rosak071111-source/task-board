@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T19:06:08+09:00",
+  "generated_at": "2026-07-25T19:36:13+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -253,6 +253,18 @@
       "file": "tasks/T-20260725-009_ネタ有料_金融ローカルLLM_RAG導入実務.md",
       "id": "T-20260725-009",
       "title": "【ネタ・有料】機密を一切外に出さない社内AIを作る──金融実務のためのローカルLLM×RAG導入ガイド2026",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-25"
+    },
+    {
+      "file": "tasks/T-20260725-010_ネタ有料_ローカルLLM本格環境構築完全ガイド.md",
+      "id": "T-20260725-010",
+      "title": "【ネタ・有料】月額課金に頼らない自前AI環境──ローカルLLM本格構築＆運用コスト完全ガイド2026",
       "project": "note記事",
       "assignee": "cloud",
       "status": "todo",
