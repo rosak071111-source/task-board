@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T01:07:12+09:00",
+  "generated_at": "2026-07-26T01:37:18+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -138,7 +138,7 @@
     {
       "file": "2026-07-25_AIに仕事を任せるが本番に.md",
       "title": "「AIに仕事を任せる」が本番に──2026年のAIエージェント三国志を仕事目線で読む",
-      "status": "裏取り",
+      "status": "校正",
       "assignee": "gemini",
       "created": "2026-07-25",
       "updated": "2026-07-26",
@@ -183,8 +183,8 @@
     {
       "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
       "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -201,8 +201,8 @@
     {
       "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
       "title": "結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
