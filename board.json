@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T02:37:30+09:00",
+  "generated_at": "2026-07-26T03:07:35+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -183,8 +183,17 @@
     {
       "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
       "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
-      "status": "校正",
-      "assignee": "gemini",
+      "status": "レビュー",
+      "assignee": "human",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-26_AI音声なりすまし詐欺_金融パーソンが今すぐ知るべき手口と防ぎ方.md",
+      "title": "「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -199,12 +208,21 @@
       "sources_count": 1
     },
     {
-      "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
-      "title": "結局どれを仕事で使う？ Claude・ChatGPT・Gemini・Copilot 2026年の使い分け早見表",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "file": "2026-07-26_会議のメモから解放される_AIボイスレコーダーが変える聞く仕事2026.md",
+      "title": "会議のメモから解放される──AIボイスレコーダーが変える\"聞く仕事\"2026",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
+      "title": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表",
+      "status": "",
+      "assignee": "",
+      "created": "",
+      "updated": "",
       "sources_count": 1
     }
   ],
@@ -227,30 +245,6 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
-    },
-    {
-      "file": "tasks/T-20260725-007_ネタ_AI音声なりすまし詐欺対策.md",
-      "id": "T-20260725-007",
-      "title": "【ネタ】「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-25",
-      "updated": "2026-07-25"
-    },
-    {
-      "file": "tasks/T-20260725-008_ネタ_AIボイスレコーダー議事録.md",
-      "id": "T-20260725-008",
-      "title": "【ネタ】会議のメモから解放される──AIボイスレコーダーが変える\"聞く仕事\"2026",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-25",
-      "updated": "2026-07-25"
     },
     {
       "file": "tasks/T20260711-001.md",
@@ -443,6 +437,30 @@
       "blocked_reason": "",
       "created": "2026-07-25",
       "updated": "2026-07-25"
+    },
+    {
+      "file": "archive/T-20260725-007_ネタ_AI音声なりすまし詐欺対策.md",
+      "id": "T-20260725-007",
+      "title": "【ネタ】「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260725-008_ネタ_AIボイスレコーダー議事録.md",
+      "id": "T-20260725-008",
+      "title": "【ネタ】会議のメモから解放される──AIボイスレコーダーが変える\"聞く仕事\"2026",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-26"
     },
     {
       "file": "archive/T-20260725-009_ネタ有料_金融ローカルLLM_RAG導入実務.md",
