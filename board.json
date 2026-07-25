@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T14:05:15+09:00",
+  "generated_at": "2026-07-25T14:35:20+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -155,6 +155,18 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
+    },
+    {
+      "file": "tasks/T-20260725-001_ネタ_テスト_在宅集中の休憩術.md",
+      "id": "T-20260725-001",
+      "title": "【ネタ】(テスト) 在宅ワークで集中が切れないための休憩のとり方",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P3",
+      "blocked_reason": "",
+      "created": "2026-07-25",
+      "updated": "2026-07-25"
     },
     {
       "file": "tasks/T20260711-001.md",
