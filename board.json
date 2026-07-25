@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T06:08:08+09:00",
+  "generated_at": "2026-07-26T06:38:13+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -205,7 +205,7 @@
       "assignee": "cloud",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 1
+      "sources_count": 8
     },
     {
       "file": "2026-07-26_会議のメモから解放される_AIボイスレコーダーが変える聞く仕事2026.md",
@@ -245,6 +245,18 @@
       "blocked_reason": "",
       "created": "2026-07-05",
       "updated": "2026-07-05"
+    },
+    {
+      "file": "tasks/T-20260726-001_⚠精査_ローカルLLM本格構築とTCO完全ガイド2026.md",
+      "id": "T-20260726-001",
+      "title": "⚠精査: 2026-07-26_ローカルLLM本格構築とTCO完全ガイド2026.md",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-26"
     },
     {
       "file": "tasks/T20260711-001.md",
