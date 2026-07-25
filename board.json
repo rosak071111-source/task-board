@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T08:08:29+09:00",
+  "generated_at": "2026-07-26T08:38:34+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -190,6 +190,15 @@
       "sources_count": 1
     },
     {
+      "file": "2026-07-26_AIのそれっぽい嘘を潰す3手順.md",
+      "title": "AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
       "file": "2026-07-26_AI音声なりすまし詐欺_金融パーソンが今すぐ知るべき手口と防ぎ方.md",
       "title": "「社長の声」で振り込め──AI音声なりすまし詐欺、金融パーソンが今すぐ知るべき手口と防ぎ方",
       "status": "完了",
@@ -215,6 +224,15 @@
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 4
+    },
+    {
+      "file": "2026-07-26_積極活用は31パーセント役員は27パーセント_AIが止まる場所.md",
+      "title": "積極活用は31%、役員はわずか27%──日本の会社でAIが止まる場所はどこか",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
     },
     {
       "file": "2026-07-26_結局どれを仕事で使うClaude_ChatGPT_Gemini_Copilot使い分け早見表.md",
@@ -278,30 +296,6 @@
       "assignee": "gemini",
       "status": "todo",
       "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-004_ネタ_AIのそれっぽい嘘を潰す3手順.md",
-      "id": "T-20260726-004",
-      "title": "【ネタ】AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-005_ネタ_中小企業31パーセント役員27パーセント.md",
-      "id": "T-20260726-005",
-      "title": "【ネタ】積極活用は31%、役員はわずか27%──日本の会社でAIが止まる場所はどこか",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
@@ -604,6 +598,30 @@
       "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-25",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-004_ネタ_AIのそれっぽい嘘を潰す3手順.md",
+      "id": "T-20260726-004",
+      "title": "【ネタ】AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-005_ネタ_中小企業31パーセント役員27パーセント.md",
+      "id": "T-20260726-005",
+      "title": "【ネタ】積極活用は31%、役員はわずか27%──日本の会社でAIが止まる場所はどこか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
       "updated": "2026-07-26"
     }
   ]
