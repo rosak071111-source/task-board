@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T01:10:59+09:00",
+  "generated_at": "2026-07-27T01:41:05+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -183,8 +183,8 @@
     {
       "file": "2026-07-26_30Bなのに3Bしか動かないローカルLLMのMoEを金融向けにたとえ話で.md",
       "title": "30Bなのに3Bしか動かない？ ローカルLLMの「MoE」を金融の人向けにたとえ話で",
-      "status": "校正",
-      "assignee": "local",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -201,8 +201,8 @@
     {
       "file": "2026-07-26_AIのそれっぽい嘘を潰す3手順.md",
       "title": "AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
-      "status": "校正",
-      "assignee": "local",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -219,19 +219,19 @@
     {
       "file": "2026-07-26_この秋AIメガネ戦争が始まる_ハンズフリーAIは外回りの仕事を変えるか.md",
       "title": "この秋「AIメガネ戦争」が始まる──ハンズフリーAIは外回りの仕事を変えるか",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-26",
-      "updated": "2026-07-26",
+      "updated": "2026-07-27",
       "sources_count": 4
     },
     {
       "file": "2026-07-26_ローカルLLMの落とし穴量子化_Q4とQ8日本語で差が出るのはどこか.md",
       "title": "ローカルLLMの落とし穴「量子化」──Q4とQ8、日本語で差が出るのはどこか",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-26",
-      "updated": "2026-07-26",
+      "updated": "2026-07-27",
       "sources_count": 3
     },
     {
