@@ -1,0 +1,9 @@
+{
+  "type": "article_review",
+  "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
+  "action": "return",
+  "to_stage": "裏取り",
+  "reason": "mac mini M4などの端末の金額が、最近の値上げを反映できていないので、再度公式ページ等で裏取りを実施すること",
+  "requested_at": "2026-07-26T06:15:27.532Z",
+  "requester": "human(board)"
+}
