@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T08:38:34+09:00",
+  "generated_at": "2026-07-26T09:08:40+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -181,6 +181,15 @@
       "sources_count": 6
     },
     {
+      "file": "2026-07-26_30Bなのに3Bしか動かないローカルLLMのMoEを金融向けにたとえ話で.md",
+      "title": "30Bなのに3Bしか動かない？ ローカルLLMの「MoE」を金融の人向けにたとえ話で",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
+    },
+    {
       "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
       "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
       "status": "完了",
@@ -272,18 +281,6 @@
       "assignee": "cloud",
       "status": "todo",
       "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-002_ネタ_MoEをたとえ話で.md",
-      "id": "T-20260726-002",
-      "title": "【ネタ】30Bなのに3Bしか動かない？ ローカルLLMの「MoE」を金融の人向けにたとえ話で",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
@@ -598,6 +595,18 @@
       "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-25",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-002_ネタ_MoEをたとえ話で.md",
+      "id": "T-20260726-002",
+      "title": "【ネタ】30Bなのに3Bしか動かない？ ローカルLLMの「MoE」を金融の人向けにたとえ話で",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
       "updated": "2026-07-26"
     },
     {
