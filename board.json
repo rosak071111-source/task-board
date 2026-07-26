@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T12:09:27+09:00",
+  "generated_at": "2026-07-26T12:39:30+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -273,11 +273,11 @@
     {
       "file": "2026-07-26_金融機関のためのAIガバナンス実装キット2026.md",
       "title": "金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
-      "status": "素案",
+      "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 1
+      "sources_count": 8
     }
   ],
   "task_statuses": [
@@ -344,6 +344,18 @@
       "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "tasks/T-20260726-011_衝突マーカー混入_note-free記事2本.md",
+      "id": "T-20260726-011",
+      "title": "【要人手】マージ衝突マーカーがコミットされている note-free 記事2本の解消",
+      "project": "note記事",
+      "assignee": "human",
+      "status": "todo",
+      "priority": "P0",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
