@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T02:11:10+09:00",
+  "generated_at": "2026-07-27T02:41:15+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -273,19 +273,19 @@
     {
       "file": "2026-07-26_金融AIが最初に効いた場所_不正検知57パーセントAMLKYC52パーセント.md",
       "title": "不正検知57%・AML/KYC 52%──金融AIが「最初に効いた場所」と、次に来る領域",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-26",
-      "updated": "2026-07-26",
+      "updated": "2026-07-27",
       "sources_count": 1
     },
     {
       "file": "2026-07-26_金融庁AIディスカッションペーパー1.1を5分で_顧客向け生成AIに置かれた4つの関門.md",
       "title": "金融庁「AIディスカッションペーパー1.1」を5分で──顧客向け生成AIに置かれた4つの関門",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-26",
-      "updated": "2026-07-26",
+      "updated": "2026-07-27",
       "sources_count": 3
     },
     {
