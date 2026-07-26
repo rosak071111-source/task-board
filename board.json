@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T20:10:24+09:00",
+  "generated_at": "2026-07-26T20:40:28+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -201,8 +201,8 @@
     {
       "file": "2026-07-26_AIのそれっぽい嘘を潰す3手順.md",
       "title": "AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
-      "status": "レビュー",
-      "assignee": "human",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -217,12 +217,21 @@
       "sources_count": 4
     },
     {
+      "file": "2026-07-26_この秋AIメガネ戦争が始まる_ハンズフリーAIは外回りの仕事を変えるか.md",
+      "title": "この秋「AIメガネ戦争」が始まる──ハンズフリーAIは外回りの仕事を変えるか",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 4
+    },
+    {
       "file": "2026-07-26_ローカルLLMの落とし穴量子化_Q4とQ8日本語で差が出るのはどこか.md",
       "title": "ローカルLLMの落とし穴「量子化」──Q4とQ8、日本語で差が出るのはどこか",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
-      "updated": "2026-07-26T16:30+09:00",
+      "updated": "2026-07-26",
       "sources_count": 1
     },
     {
@@ -263,29 +272,29 @@
     },
     {
       "file": "2026-07-26_金融AIが最初に効いた場所_不正検知57パーセントAMLKYC52パーセント.md",
-      "title": "不正検知57%! AML/KYC 52%──金融AIが「最初に効いた場所」と、次に来る領域",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "title": "不正検知57%・AML/KYC 52%──金融AIが「最初に効いた場所」と、次に来る領域",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 4
+      "sources_count": 1
     },
     {
       "file": "2026-07-26_金融庁AIディスカッションペーパー1.1を5分で_顧客向け生成AIに置かれた4つの関門.md",
       "title": "金融庁「AIディスカッションペーパー1.1」を5分で──顧客向け生成AIに置かれた4つの関門",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 3
+      "sources_count": 1
     },
     {
       "file": "2026-07-26_金融機関のためのAIガバナンス実装キット2026.md",
       "title": "金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
-      "status": "裏取り",
+      "status": "素案",
       "assignee": "cloud",
       "created": "2026-07-26",
-      "updated": "2026-07-26T18:20+09:00",
+      "updated": "2026-07-26",
       "sources_count": 1
     }
   ],
@@ -316,18 +325,6 @@
       "project": "note記事",
       "assignee": "cloud",
       "status": "review",
-      "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-008_ネタ_秋のAIメガネ戦争.md",
-      "id": "T-20260726-008",
-      "title": "【ネタ】この秋「AIメガネ戦争」が始まる──ハンズフリーAIは外回りの仕事を変えるか",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
       "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
@@ -653,6 +650,18 @@
       "assignee": "gemini",
       "status": "done",
       "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-008_ネタ_秋のAIメガネ戦争.md",
+      "id": "T-20260726-008",
+      "title": "【ネタ】この秋「AIメガネ戦争」が始まる──ハンズフリーAIは外回りの仕事を変えるか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
