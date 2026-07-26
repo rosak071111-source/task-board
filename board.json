@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T09:08:40+09:00",
+  "generated_at": "2026-07-26T09:38:46+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -183,8 +183,8 @@
     {
       "file": "2026-07-26_30Bなのに3Bしか動かないローカルLLMのMoEを金融向けにたとえ話で.md",
       "title": "30Bなのに3Bしか動かない？ ローカルLLMの「MoE」を金融の人向けにたとえ話で",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -201,8 +201,8 @@
     {
       "file": "2026-07-26_AIのそれっぽい嘘を潰す3手順.md",
       "title": "AIの「それっぽい嘘」を自分で潰す──数字を扱う人のためのファクトチェック3手順",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -223,7 +223,7 @@
       "assignee": "cloud",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 8
+      "sources_count": 14
     },
     {
       "file": "2026-07-26_会議のメモから解放される_AIボイスレコーダーが変える聞く仕事2026.md",
@@ -237,8 +237,8 @@
     {
       "file": "2026-07-26_積極活用は31パーセント役員は27パーセント_AIが止まる場所.md",
       "title": "積極活用は31%、役員はわずか27%──日本の会社でAIが止まる場所はどこか",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -251,6 +251,15 @@
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 4
+    },
+    {
+      "file": "2026-07-26_金融機関のためのAIガバナンス実装キット2026.md",
+      "title": "金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-26",
+      "updated": "2026-07-26",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -279,7 +288,7 @@
       "title": "⚠精査: 2026-07-26_ローカルLLM本格構築とTCO完全ガイド2026.md",
       "project": "note記事",
       "assignee": "cloud",
-      "status": "todo",
+      "status": "review",
       "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
@@ -329,18 +338,6 @@
       "assignee": "gemini",
       "status": "todo",
       "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-009_ネタ有料_AIガバナンス実装キット.md",
-      "id": "T-20260726-009",
-      "title": "【ネタ・有料】金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
@@ -629,6 +626,18 @@
       "assignee": "gemini",
       "status": "done",
       "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-009_ネタ有料_AIガバナンス実装キット.md",
+      "id": "T-20260726-009",
+      "title": "【ネタ・有料】金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
