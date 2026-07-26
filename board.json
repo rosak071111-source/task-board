@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T15:39:52+09:00",
+  "generated_at": "2026-07-26T16:09:56+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -192,8 +192,8 @@
     {
       "file": "2026-07-26_3万円のGPUから70万円のDGXまで2026年ローカルAIハード選び.md",
       "title": "3万円のGPUから70万円のDGXまで──2026年、自分のPCで動くAIの\"ちょうどいい\"を探す",
-      "status": "裏取り",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -219,8 +219,8 @@
     {
       "file": "2026-07-26_ローカルLLMの落とし穴量子化_Q4とQ8日本語で差が出るのはどこか.md",
       "title": "ローカルLLMの落とし穴「量子化」──Q4とQ8、日本語で差が出るのはどこか",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
@@ -282,11 +282,11 @@
     {
       "file": "2026-07-26_金融機関のためのAIガバナンス実装キット2026.md",
       "title": "金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
-      "status": "裏取り",
+      "status": "素案",
       "assignee": "cloud",
       "created": "2026-07-26",
       "updated": "2026-07-26",
-      "sources_count": 8
+      "sources_count": 1
     }
   ],
   "task_statuses": [
