@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T00:10:52+09:00",
+  "generated_at": "2026-07-27T00:40:56+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -273,8 +273,8 @@
     {
       "file": "2026-07-26_金融AIが最初に効いた場所_不正検知57パーセントAMLKYC52パーセント.md",
       "title": "不正検知57%・AML/KYC 52%──金融AIが「最初に効いた場所」と、次に来る領域",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-26",
       "updated": "2026-07-26",
       "sources_count": 1
