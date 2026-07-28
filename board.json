@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:51:21+09:00",
+  "generated_at": "2026-07-29T00:21:26+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -291,11 +291,29 @@
     {
       "file": "2026-07-26_金融機関のためのAIガバナンス実装キット2026.md",
       "title": "金融機関のためのAIガバナンス実装キット2026──金融庁DP1.1×AI事業者GL1.2を「3線防衛」に落とす設計書",
-      "status": "裏取り",
+      "status": "校正",
       "assignee": "cloud",
       "created": "2026-07-26",
-      "updated": "2026-07-28",
-      "sources_count": 3
+      "updated": "2026-07-29",
+      "sources_count": 4
+    },
+    {
+      "file": "2026-07-29_16GBのVRAMで賢いローカルLLMは動くのか.md",
+      "title": "16GBのVRAMで\"賢い\"ローカルLLMは動くのか──2026年夏、Qwen3.6とGemma 4で日本語はどこまで戦えるか",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-07-29_ChatGPTに送れない社内文書どうしてる.md",
+      "title": "ChatGPTに送れない社内文書、どうしてる?──情報漏洩ゼロの\"自前AI\"はじめの一歩",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -336,30 +354,6 @@
       "title": "【ネタ・有料】そのローカルLLM、自社で「使える」のか──日本語×自社データの評価セットを自分で作る実務ガイド",
       "project": "note記事",
       "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-011_ネタ_16GBで動く賢いローカルLLM2026夏.md",
-      "id": "T-20260726-011",
-      "title": "【ネタ】16GBのVRAMで\"賢い\"ローカルLLMは動くのか──2026年夏、Qwen3.6とGemma 4で日本語はどこまで戦えるか",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-012_ネタ_情報漏洩ゼロの自前AI入門.md",
-      "id": "T-20260726-012",
-      "title": "【ネタ】ChatGPTに送れない社内文書、どうしてる?──情報漏洩ゼロの\"自前AI\"はじめの一歩",
-      "project": "note記事",
-      "assignee": "gemini",
       "status": "todo",
       "priority": "P2",
       "blocked_reason": "",
@@ -785,6 +779,30 @@
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-011_ネタ_16GBで動く賢いローカルLLM2026夏.md",
+      "id": "T-20260726-011",
+      "title": "【ネタ】16GBのVRAMで\"賢い\"ローカルLLMは動くのか──2026年夏、Qwen3.6とGemma 4で日本語はどこまで戦えるか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-29"
+    },
+    {
+      "file": "archive/T-20260726-012_ネタ_情報漏洩ゼロの自前AI入門.md",
+      "id": "T-20260726-012",
+      "title": "【ネタ】ChatGPTに送れない社内文書、どうしてる?──情報漏洩ゼロの\"自前AI\"はじめの一歩",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-29"
     }
   ]
 }
