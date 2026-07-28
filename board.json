@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T03:22:02+09:00",
+  "generated_at": "2026-07-29T03:52:07+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -300,8 +300,8 @@
     {
       "file": "2026-07-29_16GBのVRAMで賢いローカルLLMは動くのか.md",
       "title": "16GBのVRAMで\"賢い\"ローカルLLMは動くのか──2026年夏、Qwen3.6とGemma 4で日本語はどこまで戦えるか",
-      "status": "校正",
-      "assignee": "local",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-29",
       "updated": "2026-07-29",
       "sources_count": 4
@@ -309,8 +309,8 @@
     {
       "file": "2026-07-29_ChatGPTに送れない社内文書どうしてる.md",
       "title": "ChatGPTに送れない社内文書、どうしてる?──情報漏洩ゼロの\"自前AI\"はじめの一歩",
-      "status": "校正",
-      "assignee": "local",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-29",
       "updated": "2026-07-29",
       "sources_count": 3
