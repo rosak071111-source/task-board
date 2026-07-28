@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T02:21:49+09:00",
+  "generated_at": "2026-07-29T02:51:55+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -318,11 +318,11 @@
     {
       "file": "2026-07-29_ClaudeOpus5が出た_同じ値段で最後までやり切るエージェントは仕事をどう変えるか.md",
       "title": "Claude Opus 5が出た──\"同じ値段で最後までやり切る\"エージェントは仕事をどう変えるか",
-      "status": "下書き",
-      "assignee": "local",
+      "status": "裏取り",
+      "assignee": "gemini",
       "created": "2026-07-29",
       "updated": "2026-07-29",
-      "sources_count": 1
+      "sources_count": 3
     }
   ],
   "task_statuses": [
