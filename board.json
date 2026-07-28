@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T05:52:30+09:00",
+  "generated_at": "2026-07-29T06:22:36+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -323,6 +323,15 @@
       "created": "2026-07-29",
       "updated": "2026-07-29",
       "sources_count": 3
+    },
+    {
+      "file": "2026-07-29_ローカルLLM自社評価セットの作り方.md",
+      "title": "そのローカルLLM、自社で「使える」のか──日本語×自社データの評価セットを自分で作る実務ガイド",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -353,18 +362,6 @@
       "assignee": "cloud",
       "status": "review",
       "priority": "P1",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-010_ネタ有料_ローカルLLM自社評価の作り方.md",
-      "id": "T-20260726-010",
-      "title": "【ネタ・有料】そのローカルLLM、自社で「使える」のか──日本語×自社データの評価セットを自分で作る実務ガイド",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
@@ -776,6 +773,18 @@
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
+    },
+    {
+      "file": "archive/T-20260726-010_ネタ有料_ローカルLLM自社評価の作り方.md",
+      "id": "T-20260726-010",
+      "title": "【ネタ・有料】そのローカルLLM、自社で「使える」のか──日本語×自社データの評価セットを自分で作る実務ガイド",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-29"
     },
     {
       "file": "archive/T-20260726-011_ネタ_16GBで動く賢いローカルLLM2026夏.md",
