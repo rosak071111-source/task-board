@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T01:51:44+09:00",
+  "generated_at": "2026-07-29T02:21:49+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -300,17 +300,26 @@
     {
       "file": "2026-07-29_16GBのVRAMで賢いローカルLLMは動くのか.md",
       "title": "16GBのVRAMで\"賢い\"ローカルLLMは動くのか──2026年夏、Qwen3.6とGemma 4で日本語はどこまで戦えるか",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
       "created": "2026-07-29",
       "updated": "2026-07-29",
-      "sources_count": 1
+      "sources_count": 4
     },
     {
       "file": "2026-07-29_ChatGPTに送れない社内文書どうしてる.md",
       "title": "ChatGPTに送れない社内文書、どうしてる?──情報漏洩ゼロの\"自前AI\"はじめの一歩",
-      "status": "裏取り",
-      "assignee": "gemini",
+      "status": "校正",
+      "assignee": "local",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "sources_count": 3
+    },
+    {
+      "file": "2026-07-29_ClaudeOpus5が出た_同じ値段で最後までやり切るエージェントは仕事をどう変えるか.md",
+      "title": "Claude Opus 5が出た──\"同じ値段で最後までやり切る\"エージェントは仕事をどう変えるか",
+      "status": "下書き",
+      "assignee": "local",
       "created": "2026-07-29",
       "updated": "2026-07-29",
       "sources_count": 1
@@ -356,18 +365,6 @@
       "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-013_ネタ_ClaudeOpus5が出た.md",
-      "id": "T-20260726-013",
-      "title": "【ネタ】Claude Opus 5が出た──\"同じ値段で最後までやり切る\"エージェントは仕事をどう変えるか",
-      "project": "note記事",
-      "assignee": "gemini",
-      "status": "todo",
-      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
@@ -800,6 +797,18 @@
       "assignee": "gemini",
       "status": "done",
       "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-29"
+    },
+    {
+      "file": "archive/T-20260726-013_ネタ_ClaudeOpus5が出た.md",
+      "id": "T-20260726-013",
+      "title": "【ネタ】Claude Opus 5が出た──\"同じ値段で最後までやり切る\"エージェントは仕事をどう変えるか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "done",
+      "priority": "P1",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-29"
