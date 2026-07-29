@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T05:59:41+09:00",
+  "generated_at": "2026-07-30T06:29:48+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -341,6 +341,15 @@
       "created": "2026-07-29",
       "updated": "2026-07-29",
       "sources_count": 5
+    },
+    {
+      "file": "2026-07-30_LoRAで自社ドメインに寄せる実務.md",
+      "title": "ローカルLLMを\"自社の言葉\"に育てる──LoRAファインチューニングの実務(データ整備・学習・評価・更新運用)",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-30",
+      "updated": "2026-07-30",
+      "sources_count": 4
     }
   ],
   "task_statuses": [
@@ -417,18 +426,6 @@
       "title": "【ネタ】Copilot+ PCは\"買い\"か──NPU搭載AIノートは外回り・出先の仕事をどれだけ軽くするか",
       "project": "note記事",
       "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-019_ネタ有料_LoRAで自社ドメインに寄せる実務.md",
-      "id": "T-20260726-019",
-      "title": "【ネタ・有料】ローカルLLMを\"自社の言葉\"に育てる──LoRAファインチューニングの実務(データ整備・学習・評価・更新運用)",
-      "project": "note記事",
-      "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
       "blocked_reason": "",
@@ -830,6 +827,18 @@
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-29"
+    },
+    {
+      "file": "archive/T-20260726-019_ネタ有料_LoRAで自社ドメインに寄せる実務.md",
+      "id": "T-20260726-019",
+      "title": "【ネタ・有料】ローカルLLMを\"自社の言葉\"に育てる──LoRAファインチューニングの実務(データ整備・学習・評価・更新運用)",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-30"
     }
   ]
 }
