@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T17:56:02+09:00",
+  "generated_at": "2026-07-29T18:26:08+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -325,6 +325,15 @@
       "sources_count": 3
     },
     {
+      "file": "2026-07-29_リサーチ業務半自動化AIワークフロー実装設計.md",
+      "title": "リサーチ業務を\"半自動化\"するAIワークフローの実装設計──叩き台生成から裏取り・監査ログまで、落ちない仕組みの作り方",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "sources_count": 4
+    },
+    {
       "file": "2026-07-29_ローカルLLM自社評価セットの作り方.md",
       "title": "そのローカルLLM、自社で「使える」のか──日本語×自社データの評価セットを自分で作る実務ガイド",
       "status": "レビュー",
@@ -408,18 +417,6 @@
       "title": "【ネタ】Copilot+ PCは\"買い\"か──NPU搭載AIノートは外回り・出先の仕事をどれだけ軽くするか",
       "project": "note記事",
       "assignee": "gemini",
-      "status": "todo",
-      "priority": "P2",
-      "blocked_reason": "",
-      "created": "2026-07-26",
-      "updated": "2026-07-26"
-    },
-    {
-      "file": "tasks/T-20260726-018_ネタ有料_リサーチ業務半自動化の実装設計.md",
-      "id": "T-20260726-018",
-      "title": "【ネタ・有料】リサーチ業務を\"半自動化\"するAIワークフローの実装設計──叩き台生成から裏取り・監査ログまで、落ちない仕組みの作り方",
-      "project": "note記事",
-      "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
       "blocked_reason": "",
@@ -818,6 +815,18 @@
       "assignee": "gemini",
       "status": "done",
       "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-07-26",
+      "updated": "2026-07-29"
+    },
+    {
+      "file": "archive/T-20260726-018_ネタ有料_リサーチ業務半自動化の実装設計.md",
+      "id": "T-20260726-018",
+      "title": "【ネタ・有料】リサーチ業務を\"半自動化\"するAIワークフローの実装設計──叩き台生成から裏取り・監査ログまで、落ちない仕組みの作り方",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-29"
