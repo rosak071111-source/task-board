@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T15:01:23+09:00",
+  "generated_at": "2026-07-30T15:31:31+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -345,8 +345,8 @@
     {
       "file": "2026-07-30_LoRAで自社ドメインに寄せる実務.md",
       "title": "ローカルLLMを\"自社の言葉\"に育てる──LoRAファインチューニングの実務(データ整備・学習・評価・更新運用)",
-      "status": "校正",
-      "assignee": "cloud",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-07-30",
       "updated": "2026-07-30",
       "sources_count": 16
