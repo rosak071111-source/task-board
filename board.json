@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T06:43:42+09:00",
+  "generated_at": "2026-08-02T07:13:47+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -431,6 +431,66 @@
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-26"
+    },
+    {
+      "file": "tasks/T-20260802-001_ネタ_MCP2026年7月大改訂.md",
+      "id": "T-20260802-001",
+      "title": "【ネタ】AIの\"共通コンセント\"が作り直された──2026年7月のMCP大改訂で、仕事のAIは何が変わるか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-002_ネタ_AI料金10倍値上げ説.md",
+      "id": "T-20260802-002",
+      "title": "【ネタ】今のAI料金は\"赤字価格\"だった──生成AI10倍値上げ説の中身と、個人・会社が今できる備え",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-003_ネタ_国産日本語特化ローカルLLM.md",
+      "id": "T-20260802-003",
+      "title": "【ネタ】日本語で戦えるローカルLLMは結局どれ──国産・日本語特化モデルは2026年夏に\"実務投入\"できるのか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-004_ネタ_ローカルLLMの電気代.md",
+      "id": "T-20260802-004",
+      "title": "【ネタ】自宅のAIサーバー、電気代は月いくら?──ローカルLLMを\"つけっぱなし\"にしたときの現実的なコスト",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-005_ネタ_AIが融資を断る時代の説明責任.md",
+      "id": "T-20260802-005",
+      "title": "【ネタ】\"AIが断りました\"では通らない──与信・審査にAIが入る時代の説明責任はどこまで求められるか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
     },
     {
       "file": "tasks/T20260711-001.md",
