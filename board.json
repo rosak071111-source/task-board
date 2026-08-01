@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T07:13:47+09:00",
+  "generated_at": "2026-08-02T07:43:52+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -486,6 +486,54 @@
       "title": "【ネタ】\"AIが断りました\"では通らない──与信・審査にAIが入る時代の説明責任はどこまで求められるか",
       "project": "note記事",
       "assignee": "gemini",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-006_ネタ_金融のAIエージェント任せる境界線.md",
+      "id": "T-20260802-006",
+      "title": "【ネタ】AIエージェントに\"やらせていい仕事\"の境界線──金融の現場で線を引くならどこか",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-007_ネタ_AIに食わせる前の入力ガジェット.md",
+      "id": "T-20260802-007",
+      "title": "【ネタ】AIの精度は\"入力\"で決まる──紙・手書き・口頭をAIに渡せる形にする入力環境の作り方",
+      "project": "note記事",
+      "assignee": "gemini",
+      "status": "todo",
+      "priority": "P3",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-008_ネタ有料_生成AI稟議を通す実務.md",
+      "id": "T-20260802-008",
+      "title": "【ネタ・有料候補】金融機関で生成AIの稟議を通す──リスク・コンプラ・監査を納得させる提案書の作り方",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260802-009_ネタ有料_ローカルLLM監査証跡とアクセス制御.md",
+      "id": "T-20260802-009",
+      "title": "【ネタ・有料候補】監査に耐えるローカルLLM──機微情報を扱う自前AIのアクセス制御・ログ・証跡の設計",
+      "project": "note記事",
+      "assignee": "cloud",
       "status": "todo",
       "priority": "P2",
       "blocked_reason": "",
