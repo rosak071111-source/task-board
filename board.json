@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T09:14:09+09:00",
+  "generated_at": "2026-08-02T09:44:14+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -352,6 +352,24 @@
       "sources_count": 16
     },
     {
+      "file": "2026-08-02_AIエージェント境界線.md",
+      "title": "AIエージェントに\"やらせていい仕事\"の境界線──金融の現場で線を引くならどこか",
+      "status": "裏取り",
+      "assignee": "local",
+      "created": "2026-08-02",
+      "updated": "2026-08-02",
+      "sources_count": 1
+    },
+    {
+      "file": "2026-08-02_AI料金10倍値上げ説.md",
+      "title": "今のAI料金は\"赤字価格\"だった──生成AI10倍値上げ説の中身と、個人・会社が今できる備え",
+      "status": "下書き",
+      "assignee": "local",
+      "created": "2026-08-02",
+      "updated": "2026-08-02",
+      "sources_count": 1
+    },
+    {
       "file": "2026-08-02_MCP2026年7月大改訂.md",
       "title": "AIの\"共通コンセント\"が作り直された──2026年7月のMCP大改訂で、仕事のAIは何が変わるか",
       "status": "裏取り",
@@ -507,7 +525,7 @@
       "title": "【ネタ】AIエージェントに\"やらせていい仕事\"の境界線──金融の現場で線を引くならどこか",
       "project": "note記事",
       "assignee": "local",
-      "status": "todo",
+      "status": "done",
       "priority": "P1",
       "blocked_reason": "",
       "created": "2026-08-02",
