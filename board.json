@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T11:44:36+09:00",
+  "generated_at": "2026-08-02T12:14:42+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -377,6 +377,15 @@
       "created": "2026-08-02",
       "updated": "2026-08-02",
       "sources_count": 1
+    },
+    {
+      "file": "2026-08-02_金融機関で生成AIの稟議を通す.md",
+      "title": "金融機関で生成AIの稟議を通す──リスク・コンプラ・監査を納得させる提案書の作り方",
+      "status": "素案",
+      "assignee": "cloud",
+      "created": "2026-08-02",
+      "updated": "2026-08-02",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -539,18 +548,6 @@
       "assignee": "local",
       "status": "todo",
       "priority": "P3",
-      "blocked_reason": "",
-      "created": "2026-08-02",
-      "updated": "2026-08-02"
-    },
-    {
-      "file": "tasks/T-20260802-008_ネタ有料_生成AI稟議を通す実務.md",
-      "id": "T-20260802-008",
-      "title": "【ネタ・有料候補】金融機関で生成AIの稟議を通す──リスク・コンプラ・監査を納得させる提案書の作り方",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-08-02",
       "updated": "2026-08-02"
@@ -974,6 +971,18 @@
       "blocked_reason": "",
       "created": "2026-07-26",
       "updated": "2026-07-30"
+    },
+    {
+      "file": "archive/T-20260802-008_ネタ有料_生成AI稟議を通す実務.md",
+      "id": "T-20260802-008",
+      "title": "【ネタ・有料候補】金融機関で生成AIの稟議を通す──リスク・コンプラ・監査を納得させる提案書の作り方",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-02"
     }
   ]
 }
