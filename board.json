@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T23:52:39+09:00",
+  "generated_at": "2026-08-04T00:22:45+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -393,8 +393,8 @@
       "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-08-03",
-      "updated": "2026-08-03",
-      "sources_count": 8
+      "updated": "2026-08-04",
+      "sources_count": 13
     }
   ],
   "task_statuses": [
@@ -567,11 +567,11 @@
       "title": "⚠精査: 2026-08-03_監査に耐えるローカルLLM_アクセス制御とログ設計.md",
       "project": "note記事",
       "assignee": "cloud",
-      "status": "todo",
+      "status": "review",
       "priority": "P1",
       "blocked_reason": "",
       "created": "2026-08-03",
-      "updated": "2026-08-03"
+      "updated": "2026-08-04"
     },
     {
       "file": "tasks/T20260711-001.md",
