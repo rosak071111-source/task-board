@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T17:50:55+09:00",
+  "generated_at": "2026-08-03T18:21:20+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -394,7 +394,7 @@
       "assignee": "cloud",
       "created": "2026-08-03",
       "updated": "2026-08-03",
-      "sources_count": 1
+      "sources_count": 8
     }
   ],
   "task_statuses": [
@@ -560,6 +560,18 @@
       "blocked_reason": "",
       "created": "2026-08-02",
       "updated": "2026-08-02"
+    },
+    {
+      "file": "tasks/T-20260803-001_⚠精査_監査に耐えるローカルLLM.md",
+      "id": "T-20260803-001",
+      "title": "⚠精査: 2026-08-03_監査に耐えるローカルLLM_アクセス制御とログ設計.md",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-03",
+      "updated": "2026-08-03"
     },
     {
       "file": "tasks/T20260711-001.md",
