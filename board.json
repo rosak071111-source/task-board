@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T11:48:58+09:00",
+  "generated_at": "2026-08-03T12:19:03+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -386,6 +386,15 @@
       "created": "2026-08-02",
       "updated": "2026-08-03",
       "sources_count": 7
+    },
+    {
+      "file": "2026-08-03_監査に耐えるローカルLLM_アクセス制御とログ設計.md",
+      "title": "監査に耐えるローカルLLM──機微情報を扱う自前AIのアクセス制御・ログ・証跡の設計",
+      "status": "裏取り",
+      "assignee": "cloud",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "sources_count": 1
     }
   ],
   "task_statuses": [
@@ -548,18 +557,6 @@
       "assignee": "local",
       "status": "todo",
       "priority": "P3",
-      "blocked_reason": "",
-      "created": "2026-08-02",
-      "updated": "2026-08-02"
-    },
-    {
-      "file": "tasks/T-20260802-009_ネタ有料_ローカルLLM監査証跡とアクセス制御.md",
-      "id": "T-20260802-009",
-      "title": "【ネタ・有料候補】監査に耐えるローカルLLM──機微情報を扱う自前AIのアクセス制御・ログ・証跡の設計",
-      "project": "note記事",
-      "assignee": "cloud",
-      "status": "todo",
-      "priority": "P2",
       "blocked_reason": "",
       "created": "2026-08-02",
       "updated": "2026-08-02"
@@ -983,6 +980,18 @@
       "blocked_reason": "",
       "created": "2026-08-02",
       "updated": "2026-08-02"
+    },
+    {
+      "file": "archive/T-20260802-009_ネタ有料_ローカルLLM監査証跡とアクセス制御.md",
+      "id": "T-20260802-009",
+      "title": "【ネタ・有料候補】監査に耐えるローカルLLM──機微情報を扱う自前AIのアクセス制御・ログ・証跡の設計",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "done",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-02",
+      "updated": "2026-08-03"
     }
   ]
 }
