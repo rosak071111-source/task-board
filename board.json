@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T09:59:09+09:00",
+  "generated_at": "2026-08-05T10:29:14+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -363,8 +363,8 @@
     {
       "file": "2026-08-02_AI料金10倍値上げ説.md",
       "title": "今のAI料金は\"赤字価格\"だった──生成AI10倍値上げ説の中身と、個人・会社が今できる備え",
-      "status": "校正",
-      "assignee": "local",
+      "status": "レビュー",
+      "assignee": "human",
       "created": "2026-08-02",
       "updated": "2026-08-05",
       "sources_count": 1
@@ -375,7 +375,7 @@
       "status": "裏取り",
       "assignee": "local",
       "created": "2026-08-02",
-      "updated": "2026-08-02",
+      "updated": "2026-08-05",
       "sources_count": 1
     },
     {
