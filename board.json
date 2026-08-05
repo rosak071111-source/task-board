@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T06:03:25+09:00",
+  "generated_at": "2026-08-06T06:33:30+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -393,8 +393,8 @@
       "status": "裏取り",
       "assignee": "cloud",
       "created": "2026-08-03",
-      "updated": "2026-08-04",
-      "sources_count": 15
+      "updated": "2026-08-06",
+      "sources_count": 17
     }
   ],
   "task_statuses": [
