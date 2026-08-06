@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T18:05:41+09:00",
+  "generated_at": "2026-08-06T18:35:47+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -241,7 +241,7 @@
       "assignee": "cloud",
       "created": "2026-07-26",
       "updated": "2026-08-06",
-      "sources_count": 24
+      "sources_count": 28
     },
     {
       "file": "2026-07-26_会議のメモから解放される_AIボイスレコーダーが変える聞く仕事2026.md",
@@ -394,7 +394,7 @@
       "assignee": "cloud",
       "created": "2026-08-03",
       "updated": "2026-08-06",
-      "sources_count": 17
+      "sources_count": 20
     }
   ],
   "task_statuses": [
