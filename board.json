@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T06:47:42+09:00",
+  "generated_at": "2026-08-09T07:17:47+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -572,6 +572,114 @@
       "blocked_reason": "",
       "created": "2026-08-03",
       "updated": "2026-08-04"
+    },
+    {
+      "file": "tasks/T-20260809-001_ネタ_GPUメモリ高騰でローカルAI機材の買い時.md",
+      "id": "T-20260809-001",
+      "title": "【ネタ】ローカルAIの機材代が上がっている──メモリ高騰下で\"今買う/待つ\"をどう判断するか",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-002_ネタ_オープンウェイト最強と自宅で動くの断絶.md",
+      "id": "T-20260809-002",
+      "title": "【ネタ】\"オープンウェイト最強\"は自宅では動かない──744Bモデル時代に個人が本当に使える一線はどこか",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-003_ネタ_EU_AI_Act透明性義務が日本の金融に効く経路.md",
+      "id": "T-20260809-003",
+      "title": "【ネタ】8月2日からEUのAI規制が本番に──日本で働く自分に、どの経路で効いてくるのか",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-004_ネタ_AI利用の4割は隣の職種の仕事.md",
+      "id": "T-20260809-004",
+      "title": "【ネタ】AI利用の4割は\"隣の職種の仕事\"だった──80万件の分析から見える、職種の境界が溶ける現場",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-005_ネタ_日銀2026年度調査コア業務へ.md",
+      "id": "T-20260809-005",
+      "title": "【ネタ】日銀が測った\"金融機関の生成AI\"2026──雑用から顧客業務へ、線を越えた先で何が足りていないか",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-006_ネタ_人間が使わないブラウザが出た.md",
+      "id": "T-20260809-006",
+      "title": "【ネタ】\"人間が使わないブラウザ\"が登場した──AIエージェント専用ブラウザが示す、仕事道具の次の形",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P1",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-007_ネタ_会社PCでAIが使えない問題の線引き.md",
+      "id": "T-20260809-007",
+      "title": "【ネタ】会社のPCではAIが使えない問題──ルールを破らずに生産性を上げる、個人ガジェットの線引き",
+      "project": "note記事",
+      "assignee": "local",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-008_ネタ有料_顧客に見せるAI出力の設計.md",
+      "id": "T-20260809-008",
+      "title": "【ネタ】顧客に見せるAI出力の設計書──金融が最後に越えられない一線を、どう安全に越えるか",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260809-009_ネタ有料_ローカルLLMエージェントの権限設計.md",
+      "id": "T-20260809-009",
+      "title": "【ネタ】社内でAIエージェントに\"実行\"を許すための権限設計──ローカルLLM+サンドボックス実装ガイド",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-09",
+      "updated": "2026-08-09"
     },
     {
       "file": "tasks/T20260711-001.md",
