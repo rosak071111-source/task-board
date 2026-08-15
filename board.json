@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T06:52:38+09:00",
+  "generated_at": "2026-08-16T07:22:44+09:00",
   "stages": [
     "素案",
     "下書き",
@@ -680,6 +680,30 @@
       "blocked_reason": "",
       "created": "2026-08-09",
       "updated": "2026-08-09"
+    },
+    {
+      "file": "tasks/T-20260816-001_開示資料AIリサーチ設計書.md",
+      "id": "T-20260816-001",
+      "title": "【ネタ】決算短信・有報をAIに読ませて\"間違えさせない\"──開示資料リサーチの実装設計書2026",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-16",
+      "updated": "2026-08-16"
+    },
+    {
+      "file": "tasks/T-20260816-002_ローカルLLM部署展開サーバー設計.md",
+      "id": "T-20260816-002",
+      "title": "【ネタ】1人用から\"部署で使う\"へ──社内ローカルLLMサーバーを10人で共有する設計と運用2026",
+      "project": "note記事",
+      "assignee": "cloud",
+      "status": "todo",
+      "priority": "P2",
+      "blocked_reason": "",
+      "created": "2026-08-16",
+      "updated": "2026-08-16"
     },
     {
       "file": "tasks/T20260711-001.md",
